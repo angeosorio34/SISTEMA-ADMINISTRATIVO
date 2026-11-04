@@ -1,0 +1,793 @@
+Version =20
+VersionRequired =20
+Checksum =-423566680
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    PicturePages =1
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6402
+    DatasheetFontHeight =11
+    ItemSuffix =14
+    Left =330
+    Top =12570
+    Right =330
+    Bottom =12570
+    RecSrcDt = Begin
+        0xda6908d57ba3e340
+    End
+    GUID = Begin
+        0x6361f5569feafe498242e5892000d0bf
+    End
+    NameMap = Begin
+        0x0acc0e550000000060c3d499c6fbbe4aaf6ee40beb4b172e0000000068aefafe ,
+        0x6d48e5408070aa00a845130053004f00430049004f005300000000000000f117 ,
+        0xf94dffc9cf4da04f3d8d3747269d0700000060c3d499c6fbbe4aaf6ee40beb4b ,
+        0x172e4900440053006f00630069006f0000000000000022df385494073847b17c ,
+        0xc13603da35c40700000060c3d499c6fbbe4aaf6ee40beb4b172e410070006500 ,
+        0x6c006c00690064006f0073000000000000001db90f5a09937643825ed804f899 ,
+        0x59b80700000060c3d499c6fbbe4aaf6ee40beb4b172e4e006f006d0062007200 ,
+        0x65007300000000000000931def184570fb43a0169d4c04b6cd720700000060c3 ,
+        0xd499c6fbbe4aaf6ee40beb4b172e4300490000000000000078ba74f1fd151349 ,
+        0xbc8750f7d08d3e12060000006361f5569feafe498242e5892000d0bf4e006f00 ,
+        0x6d0062007200650073000000000000005592734b3cd275439cb79b061f96f2e3 ,
+        0x060000006361f5569feafe498242e5892000d0bf4100700065006c006c006900 ,
+        0x64006f007300000000000000000000000000000000000000000000000c000000 ,
+        0x040000000000000000000000000000000000
+    End
+    RecordSource ="SELECT SOCIOS.IDSocio, SOCIOS.Apellidos, SOCIOS.Nombres, SOCIOS.CI FROM SOCIOS; "
+    Caption ="Socios y sus beneficiarios"
+    DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x0000000000000000000000000000000000000000021900005005000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010450019c00740943ef800701000100ea0a6f08640001000f00580202000100 ,
+        0x5802020001000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000003000000 ,
+        0x0200000001000000000000000000000000000000000000000000000074090000 ,
+        0x0101010150010000010000000000000000000000380000007c080000b4080000 ,
+        0x40000000f408000080000000000000000000000003000a084500500053004f00 ,
+        0x4e0020004c003200310030002000530065007200690065007300000000000000 ,
+        0x0000000000000000000000000000000000000000000000000200000000000000 ,
+        0x6801000000000000000000000100000002000300000022006801680105010000 ,
+        0x000001006f08ea0a1e001e001e001e0034089a0b3b039104010000000e001600 ,
+        0x0000000000000000000000000000000000000200000006000000000000000000 ,
+        0x0200000000020000030000000200000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000004000000640064006f08ea0a1e001e001e001e0001000000 ,
+        0x0000000000000000ffff00000000000000001e001e00010000000300e0020000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000200040002000000000000000000010032003200d4fe0000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000ff0000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000010001000000000000000a08000000000000000000000000000000000000 ,
+        0x0000000000080000002001000000000001000100040000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000001000000010000000000000000000000000000000000 ,
+        0x000000000000000000000000ffffffff00000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000008010000000060000100000020000000 ,
+        0x0000000000000100000000000000000002000000000000000000000000000000 ,
+        0x0000010000000000000000000200000000000100000000000000000000000000 ,
+        0x000000001e001e00000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000001010101
+    End
+    PrtDevNames = Begin
+        0x08001a002c000100000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000055534230303200
+    End
+    FilterOnLoad =0
+    DatasheetBackColor12 =16777215
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =9
+            FontWeight =700
+            BorderColor =5066944
+            ForeColor =11830108
+            FontName ="Calibri"
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin Rectangle
+            Width =850
+            Height =850
+            BackColor =-2147483617
+            BorderColor =-2147483617
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin Line
+            OldBorderStyle =0
+            Width =1701
+            BorderColor =5066944
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin Image
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BackColor =-2147483617
+            BorderColor =-2147483617
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =9
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin OptionButton
+            OldBorderStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =5066944
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin CheckBox
+            LabelX =230
+            LabelY =-30
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin OptionGroup
+            OldBorderStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =5066944
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            OldBorderStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =5066944
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =9
+            BorderColor =5066944
+            FontName ="Calibri"
+            AsianLineBreak =1
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+            ShowDatePicker =0
+        End
+        Begin ListBox
+            OldBorderStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =9
+            BorderColor =5066944
+            FontName ="Calibri"
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            OldBorderStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =9
+            BorderColor =5066944
+            FontName ="Calibri"
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            Width =1701
+            Height =1701
+            BorderColor =5066944
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            Width =4536
+            Height =2835
+            BorderColor =5066944
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =5066944
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =9
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+            FontSize =9
+            FontName ="Calibri"
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin Attachment
+            BackStyle =0
+            OldBorderStyle =0
+            PictureSizeMode =3
+            Width =1701
+            Height =1701
+            BorderColor =5066944
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineColor =-2147483609
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+            LabelX =-1701
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =0
+            Name ="EncabezadoDelInforme"
+            GUID = Begin
+                0x325d67cba70faa41899c5915cc395791
+            End
+        End
+        Begin PageHeader
+            Height =0
+            Name ="SecciónEncabezadoDePágina"
+            GUID = Begin
+                0x5772ae8f6ba6b047be906688708f15cc
+            End
+            AutoHeight =1
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =1360
+            Name ="Detalle"
+            GUID = Begin
+                0x43bb15ff6b292f4a9fc254f3e3d4d837
+            End
+            AlternateBackColor =16777215
+            Begin
+                Begin Subform
+                    Name ="Beneficiarios"
+                    SourceObject ="Report.SubInfBenef"
+                    Left =300
+                    Top =1400
+                    Width =11000
+                    Height =0
+                End
+                Begin TextBox
+                    TextFontCharSet =238
+                    IMESentenceMode =3
+                    Left =2151
+                    Top =56
+                    Width =4251
+                    Height =270
+                    Name ="Texto6"
+                    ControlSource ="=[Nombres]+\"  \"+[Apellidos]"
+                    GUID = Begin
+                        0x19be619f4cb490498768f45c98c14b46
+                    End
+
+                    LayoutCachedLeft =2151
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =6402
+                    LayoutCachedHeight =326
+                    Begin
+                        Begin Label
+                            Top =60
+                            Width =2040
+                            Height =270
+                            FontSize =11
+                            Name ="Etiqueta7"
+                            Caption ="Nombres y Apellidos:"
+                            GUID = Begin
+                                0x9943a03d16547f4f90424b9215e65807
+                            End
+                            LayoutCachedTop =60
+                            LayoutCachedWidth =2040
+                            LayoutCachedHeight =330
+                        End
+                    End
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =2950
+                    Top =336
+                    Width =2601
+                    Height =270
+                    FontSize =11
+                    TabIndex =1
+                    Name ="CI"
+                    ControlSource ="CI"
+                    StatusBarText ="Cédula de Identidad"
+                    GUID = Begin
+                        0xce86032860954140b7bfd5541a4af1b9
+                    End
+
+                    LayoutCachedLeft =2950
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =5551
+                    LayoutCachedHeight =606
+                    Begin
+                        Begin Label
+                            Left =2490
+                            Top =330
+                            Width =345
+                            Height =270
+                            FontSize =11
+                            Name ="Etiqueta8"
+                            Caption ="C.I.:"
+                            GUID = Begin
+                                0xd5d9cd8ac636cd4394ef1ccff8fa4c76
+                            End
+                            LayoutCachedLeft =2490
+                            LayoutCachedTop =330
+                            LayoutCachedWidth =2835
+                            LayoutCachedHeight =600
+                        End
+                    End
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =966
+                    Top =336
+                    Width =1461
+                    Height =270
+                    FontSize =11
+                    TabIndex =2
+                    Name ="IDSocio"
+                    ControlSource ="IDSocio"
+                    StatusBarText ="N° de Sodio"
+                    GUID = Begin
+                        0x52d928bdd658d14cb67aea5f059aa160
+                    End
+
+                    LayoutCachedLeft =966
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =2427
+                    LayoutCachedHeight =606
+                    Begin
+                        Begin Label
+                            Top =330
+                            Width =915
+                            Height =270
+                            FontSize =11
+                            Name ="Etiqueta9"
+                            Caption ="Socio N°:"
+                            GUID = Begin
+                                0x0f5492bb44016e4aad0fe0eda1a00d76
+                            End
+                            LayoutCachedTop =330
+                            LayoutCachedWidth =915
+                            LayoutCachedHeight =600
+                        End
+                    End
+                End
+                Begin Label
+                    Top =945
+                    Width =735
+                    Height =270
+                    FontSize =11
+                    Name ="Etiqueta10"
+                    Caption ="Firma:"
+                    GUID = Begin
+                        0xfbc847e8dfa30f4fb85b3b84d6a4ca46
+                    End
+                    LayoutCachedTop =945
+                    LayoutCachedWidth =735
+                    LayoutCachedHeight =1215
+                End
+                Begin Line
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    Left =915
+                    Top =1320
+                    Width =4648
+                    BorderColor =10319446
+                    Name ="Línea11"
+                    GUID = Begin
+                        0xbfdf92cc9a67e340916cae6600866acc
+                    End
+                    LayoutCachedLeft =915
+                    LayoutCachedTop =1320
+                    LayoutCachedWidth =5563
+                    LayoutCachedHeight =1320
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    IMESentenceMode =3
+                    Left =1190
+                    Top =885
+                    Height =270
+                    FontSize =11
+                    TabIndex =3
+                    Name ="Apellidos"
+                    ControlSource ="Apellidos"
+                    GUID = Begin
+                        0x5592734b3cd275439cb79b061f96f2e3
+                    End
+
+                    LayoutCachedLeft =1190
+                    LayoutCachedTop =885
+                    LayoutCachedWidth =2891
+                    LayoutCachedHeight =1155
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    IMESentenceMode =3
+                    Left =3061
+                    Top =885
+                    Height =270
+                    FontSize =11
+                    TabIndex =4
+                    Name ="Nombres"
+                    ControlSource ="Nombres"
+                    GUID = Begin
+                        0x78ba74f1fd151349bc8750f7d08d3e12
+                    End
+
+                    LayoutCachedLeft =3061
+                    LayoutCachedTop =885
+                    LayoutCachedWidth =4762
+                    LayoutCachedHeight =1155
+                End
+                Begin Line
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    Left =2040
+                    Top =330
+                    Width =4139
+                    BorderColor =10319446
+                    Name ="Línea136"
+                    GUID = Begin
+                        0x69fef2f9578da641a39431a33f2124b3
+                    End
+                    GridlineColor =0
+                    LayoutCachedLeft =2040
+                    LayoutCachedTop =330
+                    LayoutCachedWidth =6179
+                    LayoutCachedHeight =330
+                End
+                Begin Line
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    Left =885
+                    Top =600
+                    Width =1531
+                    BorderColor =10319446
+                    Name ="Línea135"
+                    GUID = Begin
+                        0xe47080b82058a74e813ee372fd899498
+                    End
+                    GridlineColor =0
+                    LayoutCachedLeft =885
+                    LayoutCachedTop =600
+                    LayoutCachedWidth =2416
+                    LayoutCachedHeight =600
+                End
+                Begin Line
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    Left =2951
+                    Top =600
+                    Width =3232
+                    BorderColor =10319446
+                    Name ="Línea141"
+                    GUID = Begin
+                        0x8160eba09492394aa269bc30267bce39
+                    End
+                    GridlineColor =0
+                    LayoutCachedLeft =2951
+                    LayoutCachedTop =600
+                    LayoutCachedWidth =6183
+                    LayoutCachedHeight =600
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="SecciónPieDePágina"
+            GUID = Begin
+                0x6289fe00889fec479f920034731ebad8
+            End
+            AutoHeight =1
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="PieDelInforme"
+            GUID = Begin
+                0x70cf8ff030e0174b8422b171276ea7a8
+            End
+            AutoHeight =1
+        End
+    End
+End

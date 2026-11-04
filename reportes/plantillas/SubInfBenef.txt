@@ -1,0 +1,489 @@
+Version =20
+VersionRequired =20
+Checksum =-1546821770
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11453
+    DatasheetFontHeight =11
+    ItemSuffix =115
+    Left =450
+    Top =2190
+    Right =450
+    Bottom =2190
+    RecSrcDt = Begin
+        0x0d136ff1f78ee340
+    End
+    GUID = Begin
+        0x38bd4f47b564ea4294ca53a123fced21
+    End
+    NameMap = Begin
+        0x0acc0e550000000030c781dce9d561468741632bc1a3664a000000008620e0fe ,
+        0x6d48e540807aaa00a8451300420045004e004500460049004300490041005200 ,
+        0x49004f0053000000000000007fe701bd0657a1469fca9003ba1817fa07000000 ,
+        0x30c781dce9d561468741632bc1a3664a4900640053006f00630069006f000000 ,
+        0x00000000c122ce07bf707645bbaac860ec542f2a0700000030c781dce9d56146 ,
+        0x8741632bc1a3664a49006400420065006e0000000000000043adb6ba8c598b42 ,
+        0x9e1669f428287e080700000030c781dce9d561468741632bc1a3664a4e006f00 ,
+        0x6d00620079004100700065006c0000000000000047a701bfe51eaa47a30f114f ,
+        0x0e9dc9450700000030c781dce9d561468741632bc1a3664a4300490000000000 ,
+        0x000019f21daccdeaf047af838472a9accea50700000030c781dce9d561468741 ,
+        0x632bc1a3664a50006100720065006e0074000000000000004dddaf82474c0c47 ,
+        0xb0c50426bb2cedc90700000030c781dce9d561468741632bc1a3664a46006500 ,
+        0x63004e0061006300000000000000bd8e3ad3eb48a94788ded3206926a8380700 ,
+        0x000030c781dce9d561468741632bc1a3664a520048000000000000001dce9049 ,
+        0x46591e4b930269fd64ac4c080700000030c781dce9d561468741632bc1a3664a ,
+        0x540065006c00660000000000000071ebad34a20c13418b0b9a7e2674f0e70700 ,
+        0x000030c781dce9d561468741632bc1a3664a4d00610072006300610056006500 ,
+        0x68000000000000006909a7e92247634c9de6c16c474dffc70700000030c781dc ,
+        0xe9d561468741632bc1a3664a50006c0061006300560065006800000000000000 ,
+        0xf89a51636836f042b405a76b9c957ada0700000030c781dce9d561468741632b ,
+        0xc1a3664a41006300740000000000000000000000000000000000000000000000 ,
+        0x0c000000040000000000000000000000000000000000
+    End
+    RecordSource ="SELECT BENEFICIARIOS.IdSocio, BENEFICIARIOS.IdBen, BENEFICIARIOS.NombyApel, BENE"
+        "FICIARIOS.CI, BENEFICIARIOS.Parent, BENEFICIARIOS.FecNac, BENEFICIARIOS.RH, BENE"
+        "FICIARIOS.Telf, BENEFICIARIOS.MarcaVeh, BENEFICIARIOS.PlacVeh, BENEFICIARIOS.Act"
+        " FROM BENEFICIARIOS WHERE (((BENEFICIARIOS.Act)=-1)); "
+    DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x0000000000000000000000000000000000000000bd2c00001d01000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010450019c00740943ef800701000100ea0a6f08640001000f00580202000100 ,
+        0x5802020001000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000003000000 ,
+        0x0200000001000000000000000000000000000000000000000000000074090000 ,
+        0x0101010150010000010000000000000000000000380000007c080000b4080000 ,
+        0x40000000f408000080000000000000000000000003000a084500500053004f00 ,
+        0x4e0020004c003200310030002000530065007200690065007300000000000000 ,
+        0x0000000000000000000000000000000000000000000000000200000000000000 ,
+        0x6801000000000000000000000100000002000300000022006801680105010000 ,
+        0x000001006f08ea0a1e001e001e001e0034089a0b3b039104010000000e001600 ,
+        0x0000000000000000000000000000000000000200000006000000000000000000 ,
+        0x0200000000020000030000000200000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000004000000640064006f08ea0a1e001e001e001e0001000000 ,
+        0x0000000000000000ffff00000000000000001e001e00010000000300e0020000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000200040002000000000000000000010032003200d4fe0000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000ff0000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000010001000000000000000a08000000000000000000000000000000000000 ,
+        0x0000000000080000002001000000000001000100040000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000001000000010000000000000000000000000000000000 ,
+        0x000000000000000000000000ffffffff00000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000008010000000060000100000020000000 ,
+        0x0000000000000100000000000000000002000000000000000000000000000000 ,
+        0x0000010000000000000000000200000000000100000000000000000000000000 ,
+        0x000000001e001e00000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000001010101
+    End
+    PrtDevNames = Begin
+        0x08001a002c000100000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000055534230303200
+    End
+    FilterOnLoad =0
+    DatasheetBackColor12 =16777215
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            FontName ="Calibri"
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin Rectangle
+            Width =850
+            Height =850
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin Line
+            Width =1701
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin Image
+            OldBorderStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            TextFontFamily =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+            ShowDatePicker =0
+        End
+        Begin Subform
+            Width =1701
+            Height =1701
+            LeftPadding =30
+            TopPadding =30
+            RightPadding =30
+            BottomPadding =30
+            GridlineStyleLeft =0
+            GridlineStyleTop =0
+            GridlineStyleRight =0
+            GridlineStyleBottom =0
+            GridlineWidthLeft =1
+            GridlineWidthTop =1
+            GridlineWidthRight =1
+            GridlineWidthBottom =1
+        End
+        Begin PageHeader
+            Height =0
+            Name ="SecciónEncabezadoDePágina"
+            GUID = Begin
+                0xe11dd21911d68a47bcdfcfacafa4f083
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =285
+            Name ="Detalle"
+            GUID = Begin
+                0xb0277d76a0a2b34c8a2710bcbd174c43
+            End
+            Begin
+                Begin TextBox
+                    Visible = NotDefault
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =793
+                    Top =56
+                    Width =1026
+                    Height =165
+                    Name ="IdBen"
+                    ControlSource ="IdBen"
+                    StatusBarText ="Identificador del beneficiario"
+                    GUID = Begin
+                        0x3bff2e6f7f8c234fbf29a87ef1cc7aca
+                    End
+
+                    LayoutCachedLeft =793
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =1819
+                    LayoutCachedHeight =221
+                End
+                Begin TextBox
+                    TextFontCharSet =238
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Top =30
+                    Width =2787
+                    Height =227
+                    FontSize =7
+                    TabIndex =1
+                    Name ="NombyApel"
+                    ControlSource ="NombyApel"
+                    GUID = Begin
+                        0x268eed2e95d84b4abd85513c76b379f7
+                    End
+
+                    LayoutCachedTop =30
+                    LayoutCachedWidth =2787
+                    LayoutCachedHeight =257
+                End
+                Begin TextBox
+                    TextAlign =2
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =5224
+                    Top =30
+                    Width =981
+                    Height =227
+                    FontSize =8
+                    TabIndex =2
+                    Name ="BENEFICIARIOS.CI"
+                    ControlSource ="BENEFICIARIOS.CI"
+                    EventProcPrefix ="BENEFICIARIOS_CI"
+                    GUID = Begin
+                        0x95cab0e5496bd440a0e6955252f4b456
+                    End
+
+                    LayoutCachedLeft =5224
+                    LayoutCachedTop =30
+                    LayoutCachedWidth =6205
+                    LayoutCachedHeight =257
+                End
+                Begin TextBox
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2839
+                    Top =30
+                    Width =1281
+                    Height =227
+                    FontSize =8
+                    TabIndex =3
+                    Name ="Parent"
+                    ControlSource ="Parent"
+                    GUID = Begin
+                        0x660e86c4153ce4468042b28967d9bff9
+                    End
+
+                    LayoutCachedLeft =2839
+                    LayoutCachedTop =30
+                    LayoutCachedWidth =4120
+                    LayoutCachedHeight =257
+                End
+                Begin TextBox
+                    TextAlign =2
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =4200
+                    Top =30
+                    Width =921
+                    Height =227
+                    FontSize =8
+                    TabIndex =4
+                    Name ="FecNac"
+                    ControlSource ="FecNac"
+                    Format ="Short Date"
+                    InputMask ="00/00/0000;0;_"
+                    GUID = Begin
+                        0xe0e6c4a8a60fe545ae24dba84349d9d4
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =4200
+                    LayoutCachedTop =30
+                    LayoutCachedWidth =5121
+                    LayoutCachedHeight =257
+                End
+                Begin TextBox
+                    TextAlign =2
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =6349
+                    Top =30
+                    Width =516
+                    Height =227
+                    FontSize =8
+                    TabIndex =5
+                    Name ="BENEFICIARIOS.RH"
+                    ControlSource ="BENEFICIARIOS.RH"
+                    EventProcPrefix ="BENEFICIARIOS_RH"
+                    GUID = Begin
+                        0x28538a79999d71448abc47f072d89bdd
+                    End
+
+                    LayoutCachedLeft =6349
+                    LayoutCachedTop =30
+                    LayoutCachedWidth =6865
+                    LayoutCachedHeight =257
+                End
+                Begin TextBox
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =6975
+                    Top =30
+                    Width =1116
+                    Height =227
+                    FontSize =8
+                    TabIndex =6
+                    Name ="Telf"
+                    ControlSource ="Telf"
+                    GUID = Begin
+                        0x750a5d5575a12b45b63c70c963cc7a01
+                    End
+
+                    LayoutCachedLeft =6975
+                    LayoutCachedTop =30
+                    LayoutCachedWidth =8091
+                    LayoutCachedHeight =257
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =8111
+                    Top =30
+                    Width =1620
+                    Height =227
+                    FontSize =8
+                    TabIndex =7
+                    Name ="BENEFICIARIOS.MarcaVeh"
+                    ControlSource ="BENEFICIARIOS.MarcaVeh"
+                    StatusBarText ="Marca del vehículo (si lo tiene)"
+                    EventProcPrefix ="BENEFICIARIOS_MarcaVeh"
+                    GUID = Begin
+                        0xecba53fa1256f846a7aceeff05540f77
+                    End
+
+                    LayoutCachedLeft =8111
+                    LayoutCachedTop =30
+                    LayoutCachedWidth =9731
+                    LayoutCachedHeight =257
+                End
+                Begin TextBox
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =9881
+                    Top =30
+                    Width =1386
+                    Height =227
+                    FontSize =8
+                    TabIndex =8
+                    Name ="PlacVeh"
+                    ControlSource ="PlacVeh"
+                    StatusBarText ="Placa del Vehículo (si lo tiene)"
+                    GUID = Begin
+                        0xaa59b5a00225e44c87de2126d35474a9
+                    End
+
+                    LayoutCachedLeft =9881
+                    LayoutCachedTop =30
+                    LayoutCachedWidth =11267
+                    LayoutCachedHeight =257
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="SecciónPieDePágina"
+            GUID = Begin
+                0xb51e21a9913fdb4c94b55cfbb5a26302
+            End
+        End
+    End
+End
