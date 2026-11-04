@@ -1,0 +1,3 @@
+# Huellas de la estructura de la base de versiones anteriores de SGA-GALLEGO (ver core/respaldos.py).
+# Las copias de seguridad con estas huellas se restauran y se actualizan solas con las migraciones.
+6cd387bbe6a3ea7173100f1bbc35f540e856fb545b1976f40cbdad9b2757f2bf  # hasta el 03/11/2026

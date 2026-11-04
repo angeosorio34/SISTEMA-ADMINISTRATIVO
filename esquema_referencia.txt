@@ -1,0 +1,1331 @@
+COLUMN legacy.abonos._fila_origen integer NOT NULL
+COLUMN legacy.abonos.anio_deuda text
+COLUMN legacy.abonos.c_io_rif text
+COLUMN legacy.abonos.desc_pago text
+COLUMN legacy.abonos.estado boolean
+COLUMN legacy.abonos.fact_c text
+COLUMN legacy.abonos.fec_canc timestamp without time zone
+COLUMN legacy.abonos.fec_gen_fact timestamp without time zone
+COLUMN legacy.abonos.fec_nula timestamp without time zone
+COLUMN legacy.abonos.id_socio text
+COLUMN legacy.abonos.mo_p text
+COLUMN legacy.abonos.mon_ch double precision
+COLUMN legacy.abonos.mon_dep double precision
+COLUMN legacy.abonos.mon_ef double precision
+COLUMN legacy.abonos.mon_tar_cred double precision
+COLUMN legacy.abonos.mon_tar_deb double precision
+COLUMN legacy.abonos.monto_abo double precision
+COLUMN legacy.abonos.n_fact text
+COLUMN legacy.abonos.nomy_apel text
+COLUMN legacy.abonos.nula boolean
+COLUMN legacy.abonos.tip_pago text
+COLUMN legacy.activos._fila_origen integer NOT NULL
+COLUMN legacy.activos.cant integer
+COLUMN legacy.activos.cod text
+COLUMN legacy.activos.desc text
+COLUMN legacy.activos.fecha_ing timestamp without time zone
+COLUMN legacy.activos.fecha_sal timestamp without time zone
+COLUMN legacy.activos.ubic text
+COLUMN legacy.bancos._fila_origen integer NOT NULL
+COLUMN legacy.bancos.flag text
+COLUMN legacy.bancos.nom_banco text
+COLUMN legacy.bancos.num_cuenta text
+COLUMN legacy.bancos.saldo integer
+COLUMN legacy.beneficiarios._fila_origen integer NOT NULL
+COLUMN legacy.beneficiarios.act boolean
+COLUMN legacy.beneficiarios.ci text
+COLUMN legacy.beneficiarios.email text
+COLUMN legacy.beneficiarios.fec_nac timestamp without time zone
+COLUMN legacy.beneficiarios.foto_ben bytea
+COLUMN legacy.beneficiarios.id_ben text
+COLUMN legacy.beneficiarios.id_socio text
+COLUMN legacy.beneficiarios.marca_veh text
+COLUMN legacy.beneficiarios.nomby_apel text
+COLUMN legacy.beneficiarios.parent text
+COLUMN legacy.beneficiarios.plac_veh text
+COLUMN legacy.beneficiarios.rh text
+COLUMN legacy.beneficiarios.ruta_ben text
+COLUMN legacy.beneficiarios.telf text
+COLUMN legacy.cheques._fila_origen integer NOT NULL
+COLUMN legacy.cheques.descripcion text
+COLUMN legacy.cheques.fecha_pago timestamp without time zone
+COLUMN legacy.cheques.id_socio text
+COLUMN legacy.cheques.monto double precision
+COLUMN legacy.cheques.n_cheque text
+COLUMN legacy.cheques.n_cuenta text
+COLUMN legacy.cheques.n_fact text
+COLUMN legacy.cheques.nombre_banco text
+COLUMN legacy.cheques_cg._fila_origen integer NOT NULL
+COLUMN legacy.cheques_cg.anio text
+COLUMN legacy.cheques_cg.banco text
+COLUMN legacy.cheques_cg.beneficiario text
+COLUMN legacy.cheques_cg.concepto_pago text
+COLUMN legacy.cheques_cg.fecha_dia_y_mes text
+COLUMN legacy.cheques_cg.fecha_hoy timestamp without time zone
+COLUMN legacy.cheques_cg.lugar text
+COLUMN legacy.cheques_cg.monto numeric(19,4)
+COLUMN legacy.cheques_cg.monto_div double precision
+COLUMN legacy.cheques_cg.monto_en_letras text
+COLUMN legacy.cheques_cg.monto_en_letras_2 text
+COLUMN legacy.cheques_cg.montotexto text
+COLUMN legacy.cheques_cg.nulidad boolean
+COLUMN legacy.cheques_cg.numero_cheque text
+COLUMN legacy.cheques_cg.numero_cuenta text
+COLUMN legacy.cheques_cg.numero_de_vaucher text
+COLUMN legacy.cheques_cg.pago_div boolean
+COLUMN legacy.cheques_cg.preparado text
+COLUMN legacy.concesion._fila_origen integer NOT NULL
+COLUMN legacy.concesion.cabr boolean
+COLUMN legacy.concesion.cago boolean
+COLUMN legacy.concesion.cdic boolean
+COLUMN legacy.concesion.cene boolean
+COLUMN legacy.concesion.cfeb boolean
+COLUMN legacy.concesion.cjul boolean
+COLUMN legacy.concesion.cjun boolean
+COLUMN legacy.concesion.cmar boolean
+COLUMN legacy.concesion.cmay boolean
+COLUMN legacy.concesion.cnov boolean
+COLUMN legacy.concesion.coct boolean
+COLUMN legacy.concesion.conc text
+COLUMN legacy.concesion.csep boolean
+COLUMN legacy.concesion.fcabr text
+COLUMN legacy.concesion.fcago text
+COLUMN legacy.concesion.fcdic text
+COLUMN legacy.concesion.fcene text
+COLUMN legacy.concesion.fcfeb text
+COLUMN legacy.concesion.fcjul text
+COLUMN legacy.concesion.fcjun text
+COLUMN legacy.concesion.fcmar text
+COLUMN legacy.concesion.fcmay text
+COLUMN legacy.concesion.fcnov text
+COLUMN legacy.concesion.fcoct text
+COLUMN legacy.concesion.fcsep text
+COLUMN legacy.concesion.nomconc text
+COLUMN legacy.concesion.porap double precision
+COLUMN legacy.concesion.rif text
+COLUMN legacy.depositos._fila_origen integer NOT NULL
+COLUMN legacy.depositos.descripcion text
+COLUMN legacy.depositos.fecha_pago timestamp without time zone
+COLUMN legacy.depositos.id_socio text
+COLUMN legacy.depositos.monto double precision
+COLUMN legacy.depositos.n_dep text
+COLUMN legacy.depositos.n_fact text
+COLUMN legacy.depositos.nombre_banco text
+COLUMN legacy.facturas._fila_origen integer NOT NULL
+COLUMN legacy.facturas.ap boolean
+COLUMN legacy.facturas.c_io_rif text
+COLUMN legacy.facturas.desc_pago text
+COLUMN legacy.facturas.estado boolean
+COLUMN legacy.facturas.fec_canc timestamp without time zone
+COLUMN legacy.facturas.fec_gen_fact timestamp without time zone
+COLUMN legacy.facturas.fec_nula timestamp without time zone
+COLUMN legacy.facturas.fec_top_fact timestamp without time zone
+COLUMN legacy.facturas.id_socio text
+COLUMN legacy.facturas.mo_p text
+COLUMN legacy.facturas.mon_ch double precision
+COLUMN legacy.facturas.mon_dep double precision
+COLUMN legacy.facturas.mon_ef double precision
+COLUMN legacy.facturas.mon_tar_cred double precision
+COLUMN legacy.facturas.mon_tar_deb double precision
+COLUMN legacy.facturas.monto double precision
+COLUMN legacy.facturas.monto_div double precision
+COLUMN legacy.facturas.n_cont text
+COLUMN legacy.facturas.n_fact text
+COLUMN legacy.facturas.nomy_apel text
+COLUMN legacy.facturas.nula boolean
+COLUMN legacy.facturas.num_cuo text
+COLUMN legacy.facturas.pago_div boolean
+COLUMN legacy.facturas.tip_pago text
+COLUMN legacy.libdia._fila_origen integer NOT NULL
+COLUMN legacy.libdia.banco text
+COLUMN legacy.libdia.c_io_rif text
+COLUMN legacy.libdia.desc_pago text
+COLUMN legacy.libdia.estado boolean
+COLUMN legacy.libdia.fec_canc timestamp without time zone
+COLUMN legacy.libdia.fec_gen_fact timestamp without time zone
+COLUMN legacy.libdia.fec_nula timestamp without time zone
+COLUMN legacy.libdia.fec_top_fact timestamp without time zone
+COLUMN legacy.libdia.id_socio text
+COLUMN legacy.libdia.mon_ch double precision
+COLUMN legacy.libdia.mon_dep double precision
+COLUMN legacy.libdia.mon_ef double precision
+COLUMN legacy.libdia.mon_tar_cred double precision
+COLUMN legacy.libdia.mon_tar_deb double precision
+COLUMN legacy.libdia.monto double precision
+COLUMN legacy.libdia.n_fact text
+COLUMN legacy.libdia.n_vauch text
+COLUMN legacy.libdia.nomy_apel text
+COLUMN legacy.libdia.nula boolean
+COLUMN legacy.libdia.num_cuo text
+COLUMN legacy.libdia.pag_cc double precision
+COLUMN legacy.libdia.pag_ch double precision
+COLUMN legacy.libdia.pag_ef double precision
+COLUMN legacy.libdia.tip_pago text
+COLUMN legacy.montos._fila_origen integer NOT NULL
+COLUMN legacy.montos.abr text
+COLUMN legacy.montos.ago text
+COLUMN legacy.montos.cuota_extra1 double precision
+COLUMN legacy.montos.cuota_extra10 double precision
+COLUMN legacy.montos.cuota_extra11 double precision
+COLUMN legacy.montos.cuota_extra12 double precision
+COLUMN legacy.montos.cuota_extra2 double precision
+COLUMN legacy.montos.cuota_extra3 double precision
+COLUMN legacy.montos.cuota_extra4 double precision
+COLUMN legacy.montos.cuota_extra5 double precision
+COLUMN legacy.montos.cuota_extra6 double precision
+COLUMN legacy.montos.cuota_extra7 double precision
+COLUMN legacy.montos.cuota_extra8 double precision
+COLUMN legacy.montos.cuota_extra9 double precision
+COLUMN legacy.montos.desc1 text
+COLUMN legacy.montos.desc10 text
+COLUMN legacy.montos.desc11 text
+COLUMN legacy.montos.desc12 text
+COLUMN legacy.montos.desc2 text
+COLUMN legacy.montos.desc3 text
+COLUMN legacy.montos.desc4 text
+COLUMN legacy.montos.desc5 text
+COLUMN legacy.montos.desc6 text
+COLUMN legacy.montos.desc7 text
+COLUMN legacy.montos.desc8 text
+COLUMN legacy.montos.desc9 text
+COLUMN legacy.montos.dic text
+COLUMN legacy.montos.div_inicio integer
+COLUMN legacy.montos.ene text
+COLUMN legacy.montos.feb text
+COLUMN legacy.montos.fecha1 timestamp without time zone
+COLUMN legacy.montos.fecha10 timestamp without time zone
+COLUMN legacy.montos.fecha11 timestamp without time zone
+COLUMN legacy.montos.fecha12 timestamp without time zone
+COLUMN legacy.montos.fecha2 timestamp without time zone
+COLUMN legacy.montos.fecha3 timestamp without time zone
+COLUMN legacy.montos.fecha4 timestamp without time zone
+COLUMN legacy.montos.fecha5 timestamp without time zone
+COLUMN legacy.montos.fecha6 timestamp without time zone
+COLUMN legacy.montos.fecha7 timestamp without time zone
+COLUMN legacy.montos.fecha8 timestamp without time zone
+COLUMN legacy.montos.fecha9 timestamp without time zone
+COLUMN legacy.montos.fecha_ini_div timestamp without time zone
+COLUMN legacy.montos.jul text
+COLUMN legacy.montos.jun text
+COLUMN legacy.montos.mar text
+COLUMN legacy.montos.may text
+COLUMN legacy.montos.mens_abr double precision
+COLUMN legacy.montos.mens_ago double precision
+COLUMN legacy.montos.mens_dic double precision
+COLUMN legacy.montos.mens_ene double precision
+COLUMN legacy.montos.mens_feb double precision
+COLUMN legacy.montos.mens_jul double precision
+COLUMN legacy.montos.mens_jun double precision
+COLUMN legacy.montos.mens_mar double precision
+COLUMN legacy.montos.mens_may double precision
+COLUMN legacy.montos.mens_nov double precision
+COLUMN legacy.montos.mens_oct double precision
+COLUMN legacy.montos.mens_sep double precision
+COLUMN legacy.montos.mensual double precision
+COLUMN legacy.montos.mensual_uso double precision
+COLUMN legacy.montos.nov text
+COLUMN legacy.montos.oct text
+COLUMN legacy.montos.periodo text
+COLUMN legacy.montos.sept text
+COLUMN legacy.montos.t_ac_p integer
+COLUMN legacy.montos.t_ac_u integer
+COLUMN legacy.montos.ult_cont integer
+COLUMN legacy.montos.ult_fac integer
+COLUMN legacy.montos.ult_v integer
+COLUMN legacy.montosaa._fila_origen integer NOT NULL
+COLUMN legacy.montosaa.mens_abr double precision
+COLUMN legacy.montosaa.mens_ago double precision
+COLUMN legacy.montosaa.mens_dic double precision
+COLUMN legacy.montosaa.mens_ene double precision
+COLUMN legacy.montosaa.mens_feb double precision
+COLUMN legacy.montosaa.mens_jul double precision
+COLUMN legacy.montosaa.mens_jun double precision
+COLUMN legacy.montosaa.mens_mar double precision
+COLUMN legacy.montosaa.mens_may double precision
+COLUMN legacy.montosaa.mens_nov double precision
+COLUMN legacy.montosaa.mens_oct double precision
+COLUMN legacy.montosaa.mens_sep double precision
+COLUMN legacy.montosaa.periodo text
+COLUMN legacy.morconc._fila_origen integer NOT NULL
+COLUMN legacy.morconc.anio_deuda text
+COLUMN legacy.morconc.cabr boolean
+COLUMN legacy.morconc.cago boolean
+COLUMN legacy.morconc.cdic boolean
+COLUMN legacy.morconc.cene boolean
+COLUMN legacy.morconc.cfeb boolean
+COLUMN legacy.morconc.cjul boolean
+COLUMN legacy.morconc.cjun boolean
+COLUMN legacy.morconc.cmar boolean
+COLUMN legacy.morconc.cmay boolean
+COLUMN legacy.morconc.cnov boolean
+COLUMN legacy.morconc.coct boolean
+COLUMN legacy.morconc.conc text
+COLUMN legacy.morconc.csep boolean
+COLUMN legacy.morconc.fcabr text
+COLUMN legacy.morconc.fcago text
+COLUMN legacy.morconc.fcdic text
+COLUMN legacy.morconc.fcene text
+COLUMN legacy.morconc.fcfeb text
+COLUMN legacy.morconc.fcjul text
+COLUMN legacy.morconc.fcjun text
+COLUMN legacy.morconc.fcmar text
+COLUMN legacy.morconc.fcmay text
+COLUMN legacy.morconc.fcnov text
+COLUMN legacy.morconc.fcoct text
+COLUMN legacy.morconc.fcsep text
+COLUMN legacy.morosos._fila_origen integer NOT NULL
+COLUMN legacy.morosos.abr boolean
+COLUMN legacy.morosos.act boolean
+COLUMN legacy.morosos.ago boolean
+COLUMN legacy.morosos.anio_deuda text
+COLUMN legacy.morosos.apellidos text
+COLUMN legacy.morosos.band boolean
+COLUMN legacy.morosos.cel text
+COLUMN legacy.morosos.ci text
+COLUMN legacy.morosos.dic boolean
+COLUMN legacy.morosos.dir_hab text
+COLUMN legacy.morosos.dir_trab text
+COLUMN legacy.morosos.dom_cob text
+COLUMN legacy.morosos.email text
+COLUMN legacy.morosos.email2 text
+COLUMN legacy.morosos.ene boolean
+COLUMN legacy.morosos.fabr text
+COLUMN legacy.morosos.fago text
+COLUMN legacy.morosos.fdic text
+COLUMN legacy.morosos.feb boolean
+COLUMN legacy.morosos.fech_ing timestamp without time zone
+COLUMN legacy.morosos.fene text
+COLUMN legacy.morosos.ffeb text
+COLUMN legacy.morosos.fjul text
+COLUMN legacy.morosos.fjun text
+COLUMN legacy.morosos.fmar text
+COLUMN legacy.morosos.fmay text
+COLUMN legacy.morosos.fnov text
+COLUMN legacy.morosos.foct text
+COLUMN legacy.morosos.fsep text
+COLUMN legacy.morosos.id_socio text
+COLUMN legacy.morosos.id_socio2 text
+COLUMN legacy.morosos.jul boolean
+COLUMN legacy.morosos.jun boolean
+COLUMN legacy.morosos.mar boolean
+COLUMN legacy.morosos.may boolean
+COLUMN legacy.morosos.mens double precision
+COLUMN legacy.morosos.mens_abr double precision
+COLUMN legacy.morosos.mens_ago double precision
+COLUMN legacy.morosos.mens_dic double precision
+COLUMN legacy.morosos.mens_ene double precision
+COLUMN legacy.morosos.mens_feb double precision
+COLUMN legacy.morosos.mens_jul double precision
+COLUMN legacy.morosos.mens_jun double precision
+COLUMN legacy.morosos.mens_mar double precision
+COLUMN legacy.morosos.mens_may double precision
+COLUMN legacy.morosos.mens_nov double precision
+COLUMN legacy.morosos.mens_oct double precision
+COLUMN legacy.morosos.mens_sep double precision
+COLUMN legacy.morosos.nom_empr text
+COLUMN legacy.morosos.nombres text
+COLUMN legacy.morosos.nov boolean
+COLUMN legacy.morosos.obs1 text
+COLUMN legacy.morosos.obs2 text
+COLUMN legacy.morosos.obs3 text
+COLUMN legacy.morosos.oct boolean
+COLUMN legacy.morosos.sep boolean
+COLUMN legacy.morosos.tel_hab text
+COLUMN legacy.morosos.tel_trab text
+COLUMN legacy.morosos.tipo_socio boolean
+COLUMN legacy.morosos.tot_deuda double precision
+COLUMN legacy.nivel._fila_origen integer NOT NULL
+COLUMN legacy.nivel.desc_n text
+COLUMN legacy.nivel.nivel integer
+COLUMN legacy.proveedor._fila_origen integer NOT NULL
+COLUMN legacy.proveedor.cel text
+COLUMN legacy.proveedor.cod text
+COLUMN legacy.proveedor.direc text
+COLUMN legacy.proveedor.nomb_emp text
+COLUMN legacy.proveedor.repres text
+COLUMN legacy.proveedor.suministro text
+COLUMN legacy.proveedor.telf text
+COLUMN legacy.provincias._fila_origen integer NOT NULL
+COLUMN legacy.provincias.provincia text
+COLUMN legacy.relsolv._fila_origen integer NOT NULL
+COLUMN legacy.relsolv.abr boolean
+COLUMN legacy.relsolv.act boolean
+COLUMN legacy.relsolv.ago boolean
+COLUMN legacy.relsolv.anio text
+COLUMN legacy.relsolv.apellidos text
+COLUMN legacy.relsolv.band boolean
+COLUMN legacy.relsolv.ci text
+COLUMN legacy.relsolv.dic boolean
+COLUMN legacy.relsolv.ene boolean
+COLUMN legacy.relsolv.ex text
+COLUMN legacy.relsolv.fabr text
+COLUMN legacy.relsolv.fago text
+COLUMN legacy.relsolv.fdic text
+COLUMN legacy.relsolv.feb boolean
+COLUMN legacy.relsolv.fene text
+COLUMN legacy.relsolv.ffeb text
+COLUMN legacy.relsolv.fjul text
+COLUMN legacy.relsolv.fjun text
+COLUMN legacy.relsolv.fmar text
+COLUMN legacy.relsolv.fmay text
+COLUMN legacy.relsolv.fnov text
+COLUMN legacy.relsolv.foct text
+COLUMN legacy.relsolv.fsep text
+COLUMN legacy.relsolv.id_socio text
+COLUMN legacy.relsolv.jul boolean
+COLUMN legacy.relsolv.jun boolean
+COLUMN legacy.relsolv.mar boolean
+COLUMN legacy.relsolv.may boolean
+COLUMN legacy.relsolv.nombres text
+COLUMN legacy.relsolv.nov boolean
+COLUMN legacy.relsolv.oct boolean
+COLUMN legacy.relsolv.sep boolean
+COLUMN legacy.relsolv.tipo_socio boolean
+COLUMN legacy.relsolvconc._fila_origen integer NOT NULL
+COLUMN legacy.relsolvconc.anio text
+COLUMN legacy.relsolvconc.cabr boolean
+COLUMN legacy.relsolvconc.cago boolean
+COLUMN legacy.relsolvconc.cdic boolean
+COLUMN legacy.relsolvconc.cene boolean
+COLUMN legacy.relsolvconc.cfeb boolean
+COLUMN legacy.relsolvconc.cjul boolean
+COLUMN legacy.relsolvconc.cjun boolean
+COLUMN legacy.relsolvconc.cmar boolean
+COLUMN legacy.relsolvconc.cmay boolean
+COLUMN legacy.relsolvconc.cnov boolean
+COLUMN legacy.relsolvconc.coct boolean
+COLUMN legacy.relsolvconc.conc text
+COLUMN legacy.relsolvconc.csep boolean
+COLUMN legacy.relsolvconc.fcabr text
+COLUMN legacy.relsolvconc.fcago text
+COLUMN legacy.relsolvconc.fcdic text
+COLUMN legacy.relsolvconc.fcene text
+COLUMN legacy.relsolvconc.fcfeb text
+COLUMN legacy.relsolvconc.fcjul text
+COLUMN legacy.relsolvconc.fcjun text
+COLUMN legacy.relsolvconc.fcmar text
+COLUMN legacy.relsolvconc.fcmay text
+COLUMN legacy.relsolvconc.fcnov text
+COLUMN legacy.relsolvconc.fcoct text
+COLUMN legacy.relsolvconc.fcsep text
+COLUMN legacy.socios._fila_origen integer NOT NULL
+COLUMN legacy.socios.abr boolean
+COLUMN legacy.socios.ac_adic boolean
+COLUMN legacy.socios.act boolean
+COLUMN legacy.socios.aficiones text
+COLUMN legacy.socios.ago boolean
+COLUMN legacy.socios.apellidos text
+COLUMN legacy.socios.ascend_gallego boolean
+COLUMN legacy.socios.band boolean
+COLUMN legacy.socios.cel text
+COLUMN legacy.socios.ci text
+COLUMN legacy.socios.cuota1 boolean
+COLUMN legacy.socios.cuota10 boolean
+COLUMN legacy.socios.cuota11 boolean
+COLUMN legacy.socios.cuota12 boolean
+COLUMN legacy.socios.cuota2 boolean
+COLUMN legacy.socios.cuota3 boolean
+COLUMN legacy.socios.cuota4 boolean
+COLUMN legacy.socios.cuota5 boolean
+COLUMN legacy.socios.cuota6 boolean
+COLUMN legacy.socios.cuota7 boolean
+COLUMN legacy.socios.cuota8 boolean
+COLUMN legacy.socios.cuota9 boolean
+COLUMN legacy.socios.dic boolean
+COLUMN legacy.socios.dir_hab text
+COLUMN legacy.socios.dir_trab text
+COLUMN legacy.socios.dir_web_trab text
+COLUMN legacy.socios.dom_cob text
+COLUMN legacy.socios.edo_civil text
+COLUMN legacy.socios.email text
+COLUMN legacy.socios.email2 text
+COLUMN legacy.socios.ene boolean
+COLUMN legacy.socios.ex text
+COLUMN legacy.socios.ex_t boolean
+COLUMN legacy.socios.fabr text
+COLUMN legacy.socios.fago text
+COLUMN legacy.socios.fax text
+COLUMN legacy.socios.fc1 text
+COLUMN legacy.socios.fc10 text
+COLUMN legacy.socios.fc11 text
+COLUMN legacy.socios.fc12 text
+COLUMN legacy.socios.fc2 text
+COLUMN legacy.socios.fc3 text
+COLUMN legacy.socios.fc4 text
+COLUMN legacy.socios.fc5 text
+COLUMN legacy.socios.fc6 text
+COLUMN legacy.socios.fc7 text
+COLUMN legacy.socios.fc8 text
+COLUMN legacy.socios.fc9 text
+COLUMN legacy.socios.fdic text
+COLUMN legacy.socios.feb boolean
+COLUMN legacy.socios.fech_ing timestamp without time zone
+COLUMN legacy.socios.fecha_nac timestamp without time zone
+COLUMN legacy.socios.fene text
+COLUMN legacy.socios.ffeb text
+COLUMN legacy.socios.fjul text
+COLUMN legacy.socios.fjun text
+COLUMN legacy.socios.fmar text
+COLUMN legacy.socios.fmay text
+COLUMN legacy.socios.fnov text
+COLUMN legacy.socios.foct text
+COLUMN legacy.socios.foto_socio bytea
+COLUMN legacy.socios.fsep text
+COLUMN legacy.socios.gallego boolean
+COLUMN legacy.socios.id_socio text
+COLUMN legacy.socios.jul boolean
+COLUMN legacy.socios.jun boolean
+COLUMN legacy.socios.lug_nac text
+COLUMN legacy.socios.mar boolean
+COLUMN legacy.socios.marca_veh text
+COLUMN legacy.socios.may boolean
+COLUMN legacy.socios.n_benef text
+COLUMN legacy.socios.nac text
+COLUMN legacy.socios.nom_empr text
+COLUMN legacy.socios.nombres text
+COLUMN legacy.socios.nov boolean
+COLUMN legacy.socios.obs1 text
+COLUMN legacy.socios.obs2 text
+COLUMN legacy.socios.obs3 text
+COLUMN legacy.socios.oct boolean
+COLUMN legacy.socios.placa_veh text
+COLUMN legacy.socios.profesion text
+COLUMN legacy.socios.provincia text
+COLUMN legacy.socios.ref1 text
+COLUMN legacy.socios.ref2 text
+COLUMN legacy.socios.rh text
+COLUMN legacy.socios.ruta_socio text
+COLUMN legacy.socios.sep boolean
+COLUMN legacy.socios.tel_hab text
+COLUMN legacy.socios.tel_trab text
+COLUMN legacy.socios.tipo_socio boolean
+COLUMN legacy.socios.tm_en_ciud text
+COLUMN legacy.temp_divisas._fila_origen integer NOT NULL
+COLUMN legacy.temp_divisas.c_io_rif text
+COLUMN legacy.temp_divisas.desc_pago text
+COLUMN legacy.temp_divisas.fecha timestamp without time zone
+COLUMN legacy.temp_divisas.id_socio text
+COLUMN legacy.temp_divisas.monto_div_eg double precision
+COLUMN legacy.temp_divisas.monto_div_ing double precision
+COLUMN legacy.temp_divisas.n_fact text
+COLUMN legacy.temp_divisas.nomy_apel text
+COLUMN legacy.temp_divisas.num_vaucher text
+COLUMN legacy.temp_divisas.pago_div boolean
+COLUMN legacy.temp_divisas.tip_pago text
+COLUMN legacy.temp_divisas.tipo_mov text
+COLUMN legacy.temp_montosaa._fila_origen integer NOT NULL
+COLUMN legacy.temp_montosaa.mens_abr double precision
+COLUMN legacy.temp_montosaa.mens_ago double precision
+COLUMN legacy.temp_montosaa.mens_dic double precision
+COLUMN legacy.temp_montosaa.mens_ene double precision
+COLUMN legacy.temp_montosaa.mens_feb double precision
+COLUMN legacy.temp_montosaa.mens_jul double precision
+COLUMN legacy.temp_montosaa.mens_jun double precision
+COLUMN legacy.temp_montosaa.mens_mar double precision
+COLUMN legacy.temp_montosaa.mens_may double precision
+COLUMN legacy.temp_montosaa.mens_nov double precision
+COLUMN legacy.temp_montosaa.mens_oct double precision
+COLUMN legacy.temp_montosaa.mens_sep double precision
+COLUMN legacy.temp_montosaa.periodo text
+COLUMN legacy.temp_total_socios._fila_origen integer NOT NULL
+COLUMN legacy.temp_total_socios.ac_adic boolean
+COLUMN legacy.temp_total_socios.apellidos text
+COLUMN legacy.temp_total_socios.ascend_gallego boolean
+COLUMN legacy.temp_total_socios.ci text
+COLUMN legacy.temp_total_socios.edo_civil text
+COLUMN legacy.temp_total_socios.fech_ing timestamp without time zone
+COLUMN legacy.temp_total_socios.fecha_nac timestamp without time zone
+COLUMN legacy.temp_total_socios.gallego boolean
+COLUMN legacy.temp_total_socios.id_ben text
+COLUMN legacy.temp_total_socios.id_socio text
+COLUMN legacy.temp_total_socios.lug_nac text
+COLUMN legacy.temp_total_socios.n_benef text
+COLUMN legacy.temp_total_socios.nac text
+COLUMN legacy.temp_total_socios.nombres text
+COLUMN legacy.temp_total_socios.parent text
+COLUMN legacy.temp_total_socios.profesion text
+COLUMN legacy.temp_total_socios.provincia text
+COLUMN legacy.temp_total_socios.tipo_socio boolean
+COLUMN legacy.temp_total_socios.titularidad text
+COLUMN legacy.tipospagos._fila_origen integer NOT NULL
+COLUMN legacy.tipospagos.cod text
+COLUMN legacy.tipospagos.descrip text
+COLUMN legacy.usosalon._fila_origen integer NOT NULL
+COLUMN legacy.usosalon.fecha_uso timestamp without time zone
+COLUMN legacy.usosalon.id_socio text
+COLUMN legacy.usosalon.obs text
+COLUMN legacy.usuarios._fila_origen integer NOT NULL
+COLUMN legacy.usuarios.ci text
+COLUMN legacy.usuarios.clave text
+COLUMN legacy.usuarios.nivel integer
+COLUMN legacy.usuarios.nombre text
+COLUMN legacy.usuarios.usuario text
+COLUMN public.abono.anio_deuda public.anio
+COLUMN public.abono.anulado boolean NOT NULL DEFAULT false
+COLUMN public.abono.cliente_nombre character varying(150)
+COLUMN public.abono.cliente_rif character varying(20)
+COLUMN public.abono.descripcion character varying(150)
+COLUMN public.abono.estado boolean NOT NULL DEFAULT true
+COLUMN public.abono.factura_relacionada_id bigint
+COLUMN public.abono.fecha_anulacion date
+COLUMN public.abono.fecha_cancelacion date
+COLUMN public.abono.fecha_emision date
+COLUMN public.abono.id bigint NOT NULL IDENTITY d
+COLUMN public.abono.monto public.dinero NOT NULL DEFAULT 0
+COLUMN public.abono.monto_cheque public.dinero NOT NULL DEFAULT 0
+COLUMN public.abono.monto_deposito public.dinero NOT NULL DEFAULT 0
+COLUMN public.abono.monto_efectivo public.dinero NOT NULL DEFAULT 0
+COLUMN public.abono.monto_tarjeta_credito public.dinero NOT NULL DEFAULT 0
+COLUMN public.abono.monto_tarjeta_debito public.dinero NOT NULL DEFAULT 0
+COLUMN public.abono.numero_documento character varying(10) NOT NULL
+COLUMN public.abono.numero_factura_relacionada character varying(10)
+COLUMN public.abono.socio_id bigint NOT NULL
+COLUMN public.abono.tipo_pago_id smallint
+COLUMN public.activo_fijo.cantidad integer NOT NULL DEFAULT 1
+COLUMN public.activo_fijo.codigo character varying(5)
+COLUMN public.activo_fijo.descripcion character varying(255) NOT NULL
+COLUMN public.activo_fijo.fecha_ingreso date
+COLUMN public.activo_fijo.fecha_salida date
+COLUMN public.activo_fijo.id integer NOT NULL IDENTITY d
+COLUMN public.activo_fijo.ubicacion character varying(150)
+COLUMN public.auth_group.id integer NOT NULL IDENTITY d
+COLUMN public.auth_group.name character varying(150) NOT NULL
+COLUMN public.auth_group_permissions.group_id integer NOT NULL
+COLUMN public.auth_group_permissions.id bigint NOT NULL IDENTITY d
+COLUMN public.auth_group_permissions.permission_id integer NOT NULL
+COLUMN public.auth_permission.codename character varying(100) NOT NULL
+COLUMN public.auth_permission.content_type_id integer NOT NULL
+COLUMN public.auth_permission.id integer NOT NULL IDENTITY d
+COLUMN public.auth_permission.name character varying(255) NOT NULL
+COLUMN public.auth_user.date_joined timestamp with time zone NOT NULL
+COLUMN public.auth_user.email character varying(254) NOT NULL
+COLUMN public.auth_user.first_name character varying(150) NOT NULL
+COLUMN public.auth_user.id integer NOT NULL IDENTITY d
+COLUMN public.auth_user.is_active boolean NOT NULL
+COLUMN public.auth_user.is_staff boolean NOT NULL
+COLUMN public.auth_user.is_superuser boolean NOT NULL
+COLUMN public.auth_user.last_login timestamp with time zone
+COLUMN public.auth_user.last_name character varying(150) NOT NULL
+COLUMN public.auth_user.password character varying(128) NOT NULL
+COLUMN public.auth_user.username character varying(150) NOT NULL
+COLUMN public.auth_user_groups.group_id integer NOT NULL
+COLUMN public.auth_user_groups.id bigint NOT NULL IDENTITY d
+COLUMN public.auth_user_groups.user_id integer NOT NULL
+COLUMN public.auth_user_user_permissions.id bigint NOT NULL IDENTITY d
+COLUMN public.auth_user_user_permissions.permission_id integer NOT NULL
+COLUMN public.auth_user_user_permissions.user_id integer NOT NULL
+COLUMN public.authtoken_token.created timestamp with time zone NOT NULL
+COLUMN public.authtoken_token.key character varying(40) NOT NULL
+COLUMN public.authtoken_token.user_id integer NOT NULL
+COLUMN public.banco.es_cuenta_bancaria boolean NOT NULL DEFAULT true
+COLUMN public.banco.id smallint NOT NULL IDENTITY d
+COLUMN public.banco.nombre character varying(30) NOT NULL
+COLUMN public.banco.numero_cuenta character varying(30)
+COLUMN public.banco.saldo public.dinero NOT NULL DEFAULT 0
+COLUMN public.beneficiario.activo boolean NOT NULL DEFAULT true
+COLUMN public.beneficiario.cedula character varying(15)
+COLUMN public.beneficiario.codigo character varying(7) NOT NULL
+COLUMN public.beneficiario.email character varying(60)
+COLUMN public.beneficiario.fecha_nacimiento date
+COLUMN public.beneficiario.grupo_sanguineo character varying(10)
+COLUMN public.beneficiario.id bigint NOT NULL IDENTITY d
+COLUMN public.beneficiario.marca_vehiculo text
+COLUMN public.beneficiario.nombre_completo character varying(255)
+COLUMN public.beneficiario.parentesco character varying(20)
+COLUMN public.beneficiario.placa_vehiculo character varying(10)
+COLUMN public.beneficiario.ruta_foto character varying(255)
+COLUMN public.beneficiario.socio_id bigint NOT NULL
+COLUMN public.beneficiario.telefono character varying(15)
+COLUMN public.calendario_cobro.dia_corte smallint NOT NULL
+COLUMN public.calendario_cobro.mes public.mes NOT NULL
+COLUMN public.cheque_emitido.anulado boolean NOT NULL DEFAULT false
+COLUMN public.cheque_emitido.banco_id smallint
+COLUMN public.cheque_emitido.banco_nombre character varying(30)
+COLUMN public.cheque_emitido.beneficiario character varying(50)
+COLUMN public.cheque_emitido.concepto character varying(250)
+COLUMN public.cheque_emitido.fecha date
+COLUMN public.cheque_emitido.id bigint NOT NULL IDENTITY d
+COLUMN public.cheque_emitido.lugar character varying(20)
+COLUMN public.cheque_emitido.monto public.dinero NOT NULL DEFAULT 0
+COLUMN public.cheque_emitido.monto_divisas public.dinero
+COLUMN public.cheque_emitido.monto_en_letras character varying(95)
+COLUMN public.cheque_emitido.monto_en_letras_2 character varying(30)
+COLUMN public.cheque_emitido.numero_cheque character varying(15)
+COLUMN public.cheque_emitido.numero_cuenta character varying(20)
+COLUMN public.cheque_emitido.numero_voucher character varying(10)
+COLUMN public.cheque_emitido.pago_divisas boolean NOT NULL DEFAULT false
+COLUMN public.cheque_emitido.preparado_por character varying(10)
+COLUMN public.cheque_recibido.banco_emisor character varying(255)
+COLUMN public.cheque_recibido.codigo_socio_legado character varying(10)
+COLUMN public.cheque_recibido.descripcion character varying(150)
+COLUMN public.cheque_recibido.factura_id bigint
+COLUMN public.cheque_recibido.fecha_pago date
+COLUMN public.cheque_recibido.id bigint NOT NULL IDENTITY d
+COLUMN public.cheque_recibido.monto public.dinero NOT NULL DEFAULT 0
+COLUMN public.cheque_recibido.numero_cheque character varying(15)
+COLUMN public.cheque_recibido.numero_cuenta character varying(20)
+COLUMN public.cheque_recibido.numero_factura character varying(10)
+COLUMN public.cheque_recibido.socio_id bigint
+COLUMN public.concesion.id smallint NOT NULL IDENTITY d
+COLUMN public.concesion.nombre character varying(255) NOT NULL
+COLUMN public.concesion.porcentaje_aporte numeric(7,4) NOT NULL DEFAULT 0
+COLUMN public.concesion.rif character varying(20)
+COLUMN public.concesion.tipo_pago_id smallint NOT NULL
+COLUMN public.concesion_mensualidad.anio public.anio NOT NULL
+COLUMN public.concesion_mensualidad.concesion_id smallint NOT NULL
+COLUMN public.concesion_mensualidad.id bigint NOT NULL IDENTITY d
+COLUMN public.concesion_mensualidad.mes public.mes NOT NULL
+COLUMN public.concesion_mensualidad.numero_factura character varying(10)
+COLUMN public.concesion_mensualidad.origen character varying(12) NOT NULL
+COLUMN public.concesion_mensualidad.pagado boolean NOT NULL DEFAULT false
+COLUMN public.configuracion.divisas_inicio integer
+COLUMN public.configuracion.fecha_inicio_divisas date
+COLUMN public.configuracion.id smallint NOT NULL DEFAULT 1
+COLUMN public.configuracion.mensualidad public.dinero
+COLUMN public.configuracion.mensualidad_uso public.dinero
+COLUMN public.configuracion.periodo_actual public.anio NOT NULL
+COLUMN public.configuracion.total_acciones_propietario integer
+COLUMN public.configuracion.total_acciones_uso integer
+COLUMN public.configuracion.ultima_factura integer
+COLUMN public.configuracion.ultimo_numero_control integer
+COLUMN public.configuracion.ultimo_voucher integer
+COLUMN public.cuota_extra.descripcion character varying(80)
+COLUMN public.cuota_extra.fecha_vencimiento date
+COLUMN public.cuota_extra.id smallint NOT NULL IDENTITY d
+COLUMN public.cuota_extra.monto public.dinero NOT NULL DEFAULT 0
+COLUMN public.cuota_extra.numero smallint NOT NULL
+COLUMN public.deposito.banco_id smallint
+COLUMN public.deposito.banco_nombre character varying(255)
+COLUMN public.deposito.codigo_socio_legado character varying(10)
+COLUMN public.deposito.descripcion character varying(150)
+COLUMN public.deposito.factura_id bigint
+COLUMN public.deposito.fecha_pago date
+COLUMN public.deposito.id bigint NOT NULL IDENTITY d
+COLUMN public.deposito.monto public.dinero NOT NULL DEFAULT 0
+COLUMN public.deposito.numero_deposito character varying(20)
+COLUMN public.deposito.numero_factura character varying(10)
+COLUMN public.deposito.socio_id bigint
+COLUMN public.django_admin_log.action_flag smallint NOT NULL
+COLUMN public.django_admin_log.action_time timestamp with time zone NOT NULL
+COLUMN public.django_admin_log.change_message text NOT NULL
+COLUMN public.django_admin_log.content_type_id integer
+COLUMN public.django_admin_log.id integer NOT NULL IDENTITY d
+COLUMN public.django_admin_log.object_id text
+COLUMN public.django_admin_log.object_repr character varying(200) NOT NULL
+COLUMN public.django_admin_log.user_id integer NOT NULL
+COLUMN public.django_content_type.app_label character varying(100) NOT NULL
+COLUMN public.django_content_type.id integer NOT NULL IDENTITY d
+COLUMN public.django_content_type.model character varying(100) NOT NULL
+COLUMN public.django_migrations.app character varying(255) NOT NULL
+COLUMN public.django_migrations.applied timestamp with time zone NOT NULL
+COLUMN public.django_migrations.id bigint NOT NULL IDENTITY d
+COLUMN public.django_migrations.name character varying(255) NOT NULL
+COLUMN public.django_session.expire_date timestamp with time zone NOT NULL
+COLUMN public.django_session.session_data text NOT NULL
+COLUMN public.django_session.session_key character varying(40) NOT NULL
+COLUMN public.factura.anulada boolean NOT NULL DEFAULT false
+COLUMN public.factura.cliente_nombre character varying(150)
+COLUMN public.factura.cliente_rif character varying(20)
+COLUMN public.factura.codigo_socio_legado character varying(10)
+COLUMN public.factura.descripcion character varying(150)
+COLUMN public.factura.es_aporte boolean NOT NULL DEFAULT false
+COLUMN public.factura.estado boolean NOT NULL DEFAULT true
+COLUMN public.factura.fecha_anulacion date
+COLUMN public.factura.fecha_cancelacion date
+COLUMN public.factura.fecha_emision date
+COLUMN public.factura.fecha_tope date
+COLUMN public.factura.id bigint NOT NULL IDENTITY d
+COLUMN public.factura.monto public.dinero NOT NULL DEFAULT 0
+COLUMN public.factura.monto_cheque public.dinero NOT NULL DEFAULT 0
+COLUMN public.factura.monto_deposito public.dinero NOT NULL DEFAULT 0
+COLUMN public.factura.monto_divisas public.dinero
+COLUMN public.factura.monto_efectivo public.dinero NOT NULL DEFAULT 0
+COLUMN public.factura.monto_tarjeta_credito public.dinero NOT NULL DEFAULT 0
+COLUMN public.factura.monto_tarjeta_debito public.dinero NOT NULL DEFAULT 0
+COLUMN public.factura.numero character varying(10)
+COLUMN public.factura.numero_control character varying(12)
+COLUMN public.factura.numero_cuotas smallint
+COLUMN public.factura.pago_divisas boolean NOT NULL DEFAULT false
+COLUMN public.factura.socio_id bigint
+COLUMN public.factura.tipo_pago_id smallint
+COLUMN public.libro_diario.anulada boolean NOT NULL DEFAULT false
+COLUMN public.libro_diario.banco_nombre character varying(25)
+COLUMN public.libro_diario.cliente_nombre character varying(150)
+COLUMN public.libro_diario.cliente_rif character varying(20)
+COLUMN public.libro_diario.codigo_socio_legado character varying(10)
+COLUMN public.libro_diario.descripcion character varying(150)
+COLUMN public.libro_diario.estado boolean NOT NULL DEFAULT true
+COLUMN public.libro_diario.factura_id bigint
+COLUMN public.libro_diario.fecha_anulacion date
+COLUMN public.libro_diario.fecha_cancelacion date
+COLUMN public.libro_diario.fecha_emision date
+COLUMN public.libro_diario.fecha_tope date
+COLUMN public.libro_diario.id bigint NOT NULL IDENTITY d
+COLUMN public.libro_diario.monto public.dinero NOT NULL DEFAULT 0
+COLUMN public.libro_diario.monto_cheque public.dinero NOT NULL DEFAULT 0
+COLUMN public.libro_diario.monto_deposito public.dinero NOT NULL DEFAULT 0
+COLUMN public.libro_diario.monto_efectivo public.dinero NOT NULL DEFAULT 0
+COLUMN public.libro_diario.monto_tarjeta_credito public.dinero NOT NULL DEFAULT 0
+COLUMN public.libro_diario.monto_tarjeta_debito public.dinero NOT NULL DEFAULT 0
+COLUMN public.libro_diario.numero_cuotas smallint
+COLUMN public.libro_diario.numero_factura character varying(10)
+COLUMN public.libro_diario.numero_voucher character varying(10)
+COLUMN public.libro_diario.pago_cargo_cuenta public.dinero
+COLUMN public.libro_diario.pago_cheque public.dinero
+COLUMN public.libro_diario.pago_efectivo public.dinero
+COLUMN public.libro_diario.socio_id bigint
+COLUMN public.libro_diario.tipo_pago_id smallint
+COLUMN public.migracion_incidencia.clave_origen character varying(60)
+COLUMN public.migracion_incidencia.creado_en timestamp with time zone NOT NULL DEFAULT now()
+COLUMN public.migracion_incidencia.datos jsonb
+COLUMN public.migracion_incidencia.detalle text NOT NULL
+COLUMN public.migracion_incidencia.id bigint NOT NULL IDENTITY d
+COLUMN public.migracion_incidencia.nota_resolucion text
+COLUMN public.migracion_incidencia.resuelta boolean NOT NULL DEFAULT false
+COLUMN public.migracion_incidencia.resuelta_en timestamp with time zone
+COLUMN public.migracion_incidencia.resuelta_por character varying(150)
+COLUMN public.migracion_incidencia.tabla_origen character varying(40) NOT NULL
+COLUMN public.migracion_incidencia.tipo character varying(20) NOT NULL
+COLUMN public.nivel_acceso.descripcion character varying(100) NOT NULL
+COLUMN public.nivel_acceso.id smallint NOT NULL
+COLUMN public.proveedor.celular character varying(15)
+COLUMN public.proveedor.codigo character varying(5)
+COLUMN public.proveedor.direccion character varying(150)
+COLUMN public.proveedor.id smallint NOT NULL IDENTITY d
+COLUMN public.proveedor.nombre_empresa character varying(100) NOT NULL
+COLUMN public.proveedor.representante character varying(100)
+COLUMN public.proveedor.suministro character varying(255)
+COLUMN public.proveedor.telefono character varying(15)
+COLUMN public.provincia.id smallint NOT NULL IDENTITY d
+COLUMN public.provincia.nombre character varying(50) NOT NULL
+COLUMN public.retencion_iva.alicuota numeric(5,2) NOT NULL
+COLUMN public.retencion_iva.anulada boolean NOT NULL
+COLUMN public.retencion_iva.base_imponible numeric(18,2) NOT NULL
+COLUMN public.retencion_iva.creado_en timestamp with time zone NOT NULL
+COLUMN public.retencion_iva.creado_por character varying(150) NOT NULL
+COLUMN public.retencion_iva.egreso_id bigint
+COLUMN public.retencion_iva.fecha_anulacion date
+COLUMN public.retencion_iva.fecha_comprobante date NOT NULL
+COLUMN public.retencion_iva.fecha_factura date NOT NULL
+COLUMN public.retencion_iva.id bigint NOT NULL IDENTITY d
+COLUMN public.retencion_iva.monto_exento numeric(18,2) NOT NULL
+COLUMN public.retencion_iva.monto_iva numeric(18,2) NOT NULL
+COLUMN public.retencion_iva.monto_pagar numeric(18,2) NOT NULL
+COLUMN public.retencion_iva.monto_retenido numeric(18,2) NOT NULL
+COLUMN public.retencion_iva.motivo_100 character varying(200)
+COLUMN public.retencion_iva.motivo_anulacion character varying(200)
+COLUMN public.retencion_iva.numero_comprobante character varying(14) NOT NULL
+COLUMN public.retencion_iva.numero_control character varying(20) NOT NULL
+COLUMN public.retencion_iva.numero_factura character varying(20) NOT NULL
+COLUMN public.retencion_iva.observacion character varying(250)
+COLUMN public.retencion_iva.periodo character varying(6) NOT NULL
+COLUMN public.retencion_iva.porcentaje_retencion smallint NOT NULL
+COLUMN public.retencion_iva.proveedor_id smallint
+COLUMN public.retencion_iva.proveedor_nombre character varying(150) NOT NULL
+COLUMN public.retencion_iva.proveedor_rif character varying(12) NOT NULL
+COLUMN public.retencion_iva.quincena smallint NOT NULL
+COLUMN public.retencion_iva.tipo_documento character varying(2) NOT NULL
+COLUMN public.retencion_iva.total_factura numeric(18,2) NOT NULL
+COLUMN public.socio.accion_adicional boolean NOT NULL DEFAULT false
+COLUMN public.socio.act_legado boolean NOT NULL DEFAULT false
+COLUMN public.socio.aficiones character varying(255)
+COLUMN public.socio.apellidos character varying(150)
+COLUMN public.socio.ascendencia_gallega boolean NOT NULL DEFAULT false
+COLUMN public.socio.band_legado boolean NOT NULL DEFAULT false
+COLUMN public.socio.cedula character varying(15)
+COLUMN public.socio.celular character varying(15)
+COLUMN public.socio.codigo character varying(4) NOT NULL
+COLUMN public.socio.direccion_habitacion character varying(255)
+COLUMN public.socio.direccion_trabajo character varying(255)
+COLUMN public.socio.domicilio_cobro character varying(255)
+COLUMN public.socio.email character varying(60)
+COLUMN public.socio.email_alterno character varying(60)
+COLUMN public.socio.empresa character varying(80)
+COLUMN public.socio.es_gallego boolean NOT NULL DEFAULT false
+COLUMN public.socio.estado_civil character(1)
+COLUMN public.socio.exonerado boolean NOT NULL DEFAULT false
+COLUMN public.socio.exonerado_total boolean NOT NULL DEFAULT false
+COLUMN public.socio.fax character varying(15)
+COLUMN public.socio.fecha_ingreso date
+COLUMN public.socio.fecha_nacimiento date
+COLUMN public.socio.grupo_sanguineo character varying(10)
+COLUMN public.socio.id bigint NOT NULL IDENTITY d
+COLUMN public.socio.lugar_nacimiento character varying(255)
+COLUMN public.socio.marca_vehiculo character varying(20)
+COLUMN public.socio.nacionalidad character varying(30)
+COLUMN public.socio.nombres character varying(150)
+COLUMN public.socio.observaciones text
+COLUMN public.socio.placa_vehiculo character varying(10)
+COLUMN public.socio.profesion character varying(30)
+COLUMN public.socio.provincia_id smallint
+COLUMN public.socio.referencia_1 character varying(10)
+COLUMN public.socio.referencia_2 character varying(10)
+COLUMN public.socio.ruta_foto character varying(255)
+COLUMN public.socio.telefono_habitacion character varying(15)
+COLUMN public.socio.telefono_trabajo character varying(15)
+COLUMN public.socio.tiempo_en_ciudad character varying(20)
+COLUMN public.socio.tipo_socio character(1) NOT NULL
+COLUMN public.socio.web_trabajo character varying(30)
+COLUMN public.socio_cuota_extra.cuota_extra_id smallint NOT NULL
+COLUMN public.socio_cuota_extra.id bigint NOT NULL IDENTITY d
+COLUMN public.socio_cuota_extra.numero_factura character varying(10)
+COLUMN public.socio_cuota_extra.pagada boolean NOT NULL DEFAULT false
+COLUMN public.socio_cuota_extra.socio_id bigint NOT NULL
+COLUMN public.socio_mensualidad.anio public.anio NOT NULL
+COLUMN public.socio_mensualidad.id bigint NOT NULL IDENTITY d
+COLUMN public.socio_mensualidad.mes public.mes NOT NULL
+COLUMN public.socio_mensualidad.monto_tarifa public.dinero
+COLUMN public.socio_mensualidad.numero_factura character varying(10)
+COLUMN public.socio_mensualidad.origen character varying(10) NOT NULL
+COLUMN public.socio_mensualidad.pagado boolean NOT NULL DEFAULT false
+COLUMN public.socio_mensualidad.socio_id bigint NOT NULL
+COLUMN public.tarifa_mensual.anio public.anio NOT NULL
+COLUMN public.tarifa_mensual.id integer NOT NULL IDENTITY d
+COLUMN public.tarifa_mensual.mes public.mes NOT NULL
+COLUMN public.tarifa_mensual.monto public.dinero NOT NULL
+COLUMN public.tipo_pago.codigo character varying(4) NOT NULL
+COLUMN public.tipo_pago.descripcion character varying(100) NOT NULL
+COLUMN public.tipo_pago.id smallint NOT NULL IDENTITY d
+COLUMN public.uso_salon.fecha_uso date NOT NULL
+COLUMN public.uso_salon.id bigint NOT NULL IDENTITY d
+COLUMN public.uso_salon.observacion character varying(150)
+COLUMN public.uso_salon.socio_id bigint NOT NULL
+COLUMN public.usuario_sistema.activo boolean NOT NULL DEFAULT true
+COLUMN public.usuario_sistema.cedula character varying(15)
+COLUMN public.usuario_sistema.id bigint NOT NULL IDENTITY d
+COLUMN public.usuario_sistema.nivel_acceso_id smallint NOT NULL
+COLUMN public.usuario_sistema.nombre character varying(150)
+COLUMN public.usuario_sistema.username character varying(30) NOT NULL
+CONSTRAINT legacy.abonos abonos_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.activos activos_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.bancos bancos_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.beneficiarios beneficiarios_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.cheques cheques_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.cheques_cg cheques_cg_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.concesion concesion_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.depositos depositos_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.facturas facturas_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.libdia libdia_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.montos montos_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.montosaa montosaa_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.morconc morconc_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.morosos morosos_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.nivel nivel_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.proveedor proveedor_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.provincias provincias_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.relsolv relsolv_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.relsolvconc relsolvconc_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.socios socios_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.temp_divisas temp_divisas_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.temp_montosaa temp_montosaa_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.temp_total_socios temp_total_socios_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.tipospagos tipospagos_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.usosalon usosalon_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT legacy.usuarios usuarios_pkey PRIMARY KEY (_fila_origen)
+CONSTRAINT public.abono abono_factura_relacionada_id_fkey FOREIGN KEY (factura_relacionada_id) REFERENCES public.factura(id) ON DELETE SET NULL
+CONSTRAINT public.abono abono_pkey PRIMARY KEY (id)
+CONSTRAINT public.abono abono_socio_id_fkey FOREIGN KEY (socio_id) REFERENCES public.socio(id) ON DELETE RESTRICT
+CONSTRAINT public.abono abono_tipo_pago_id_fkey FOREIGN KEY (tipo_pago_id) REFERENCES public.tipo_pago(id)
+CONSTRAINT public.activo_fijo activo_fijo_cantidad_check CHECK ((cantidad >= 0))
+CONSTRAINT public.activo_fijo activo_fijo_check CHECK (((fecha_salida IS NULL) OR (fecha_ingreso IS NULL) OR (fecha_salida >= fecha_ingreso)))
+CONSTRAINT public.activo_fijo activo_fijo_codigo_key UNIQUE (codigo)
+CONSTRAINT public.activo_fijo activo_fijo_pkey PRIMARY KEY (id)
+CONSTRAINT public.anio anio_check CHECK (((VALUE >= 1900) AND (VALUE <= 2100)))
+CONSTRAINT public.auth_group auth_group_name_key UNIQUE (name)
+CONSTRAINT public.auth_group auth_group_pkey PRIMARY KEY (id)
+CONSTRAINT public.auth_group_permissions auth_group_permissio_permission_id_84c5c92e_fk_auth_perm FOREIGN KEY (permission_id) REFERENCES public.auth_permission(id) DEFERRABLE INITIALLY DEFERRED
+CONSTRAINT public.auth_group_permissions auth_group_permissions_group_id_b120cbf9_fk_auth_group_id FOREIGN KEY (group_id) REFERENCES public.auth_group(id) DEFERRABLE INITIALLY DEFERRED
+CONSTRAINT public.auth_group_permissions auth_group_permissions_group_id_permission_id_0cd325b0_uniq UNIQUE (group_id, permission_id)
+CONSTRAINT public.auth_group_permissions auth_group_permissions_pkey PRIMARY KEY (id)
+CONSTRAINT public.auth_permission auth_permission_content_type_id_2f476e4b_fk_django_co FOREIGN KEY (content_type_id) REFERENCES public.django_content_type(id) DEFERRABLE INITIALLY DEFERRED
+CONSTRAINT public.auth_permission auth_permission_content_type_id_codename_01ab375a_uniq UNIQUE (content_type_id, codename)
+CONSTRAINT public.auth_permission auth_permission_pkey PRIMARY KEY (id)
+CONSTRAINT public.auth_user auth_user_pkey PRIMARY KEY (id)
+CONSTRAINT public.auth_user auth_user_username_key UNIQUE (username)
+CONSTRAINT public.auth_user_groups auth_user_groups_group_id_97559544_fk_auth_group_id FOREIGN KEY (group_id) REFERENCES public.auth_group(id) DEFERRABLE INITIALLY DEFERRED
+CONSTRAINT public.auth_user_groups auth_user_groups_pkey PRIMARY KEY (id)
+CONSTRAINT public.auth_user_groups auth_user_groups_user_id_6a12ed8b_fk_auth_user_id FOREIGN KEY (user_id) REFERENCES public.auth_user(id) DEFERRABLE INITIALLY DEFERRED
+CONSTRAINT public.auth_user_groups auth_user_groups_user_id_group_id_94350c0c_uniq UNIQUE (user_id, group_id)
+CONSTRAINT public.auth_user_user_permissions auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm FOREIGN KEY (permission_id) REFERENCES public.auth_permission(id) DEFERRABLE INITIALLY DEFERRED
+CONSTRAINT public.auth_user_user_permissions auth_user_user_permissions_pkey PRIMARY KEY (id)
+CONSTRAINT public.auth_user_user_permissions auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id FOREIGN KEY (user_id) REFERENCES public.auth_user(id) DEFERRABLE INITIALLY DEFERRED
+CONSTRAINT public.auth_user_user_permissions auth_user_user_permissions_user_id_permission_id_14a6b632_uniq UNIQUE (user_id, permission_id)
+CONSTRAINT public.authtoken_token authtoken_token_pkey PRIMARY KEY (key)
+CONSTRAINT public.authtoken_token authtoken_token_user_id_35299eff_fk_auth_user_id FOREIGN KEY (user_id) REFERENCES public.auth_user(id) DEFERRABLE INITIALLY DEFERRED
+CONSTRAINT public.authtoken_token authtoken_token_user_id_key UNIQUE (user_id)
+CONSTRAINT public.banco banco_nombre_key UNIQUE (nombre)
+CONSTRAINT public.banco banco_pkey PRIMARY KEY (id)
+CONSTRAINT public.beneficiario beneficiario_codigo_key UNIQUE (codigo)
+CONSTRAINT public.beneficiario beneficiario_pkey PRIMARY KEY (id)
+CONSTRAINT public.beneficiario beneficiario_socio_id_fkey FOREIGN KEY (socio_id) REFERENCES public.socio(id) ON DELETE CASCADE
+CONSTRAINT public.calendario_cobro calendario_cobro_dia_corte_check CHECK (((dia_corte >= 1) AND (dia_corte <= 31)))
+CONSTRAINT public.calendario_cobro calendario_cobro_pkey PRIMARY KEY (mes)
+CONSTRAINT public.cheque_emitido cheque_emitido_banco_id_fkey FOREIGN KEY (banco_id) REFERENCES public.banco(id)
+CONSTRAINT public.cheque_emitido cheque_emitido_numero_cheque_key UNIQUE (numero_cheque)
+CONSTRAINT public.cheque_emitido cheque_emitido_pkey PRIMARY KEY (id)
+CONSTRAINT public.cheque_recibido cheque_recibido_factura_id_fkey FOREIGN KEY (factura_id) REFERENCES public.factura(id) ON DELETE SET NULL
+CONSTRAINT public.cheque_recibido cheque_recibido_pkey PRIMARY KEY (id)
+CONSTRAINT public.cheque_recibido cheque_recibido_socio_id_fkey FOREIGN KEY (socio_id) REFERENCES public.socio(id) ON DELETE RESTRICT
+CONSTRAINT public.concesion concesion_pkey PRIMARY KEY (id)
+CONSTRAINT public.concesion concesion_tipo_pago_id_fkey FOREIGN KEY (tipo_pago_id) REFERENCES public.tipo_pago(id)
+CONSTRAINT public.concesion concesion_tipo_pago_id_key UNIQUE (tipo_pago_id)
+CONSTRAINT public.concesion_mensualidad concesion_mensualidad_concesion_id_fkey FOREIGN KEY (concesion_id) REFERENCES public.concesion(id) ON DELETE CASCADE
+CONSTRAINT public.concesion_mensualidad concesion_mensualidad_origen_check CHECK (((origen)::text = ANY (ARRAY[('CONCESION'::character varying)::text, ('RELSOLVCONC'::character varying)::text, ('MORCONC'::character varying)::text])))
+CONSTRAINT public.concesion_mensualidad concesion_mensualidad_pkey PRIMARY KEY (id)
+CONSTRAINT public.concesion_mensualidad uq_concesion_mensualidad UNIQUE (concesion_id, anio, mes)
+CONSTRAINT public.configuracion configuracion_id_check CHECK ((id = 1))
+CONSTRAINT public.configuracion configuracion_pkey PRIMARY KEY (id)
+CONSTRAINT public.cuota_extra cuota_extra_numero_check CHECK (((numero >= 1) AND (numero <= 12)))
+CONSTRAINT public.cuota_extra cuota_extra_numero_key UNIQUE (numero)
+CONSTRAINT public.cuota_extra cuota_extra_pkey PRIMARY KEY (id)
+CONSTRAINT public.deposito deposito_banco_id_fkey FOREIGN KEY (banco_id) REFERENCES public.banco(id)
+CONSTRAINT public.deposito deposito_factura_id_fkey FOREIGN KEY (factura_id) REFERENCES public.factura(id) ON DELETE SET NULL
+CONSTRAINT public.deposito deposito_pkey PRIMARY KEY (id)
+CONSTRAINT public.deposito deposito_socio_id_fkey FOREIGN KEY (socio_id) REFERENCES public.socio(id) ON DELETE RESTRICT
+CONSTRAINT public.django_admin_log django_admin_log_action_flag_check CHECK ((action_flag >= 0))
+CONSTRAINT public.django_admin_log django_admin_log_content_type_id_c4bce8eb_fk_django_co FOREIGN KEY (content_type_id) REFERENCES public.django_content_type(id) DEFERRABLE INITIALLY DEFERRED
+CONSTRAINT public.django_admin_log django_admin_log_pkey PRIMARY KEY (id)
+CONSTRAINT public.django_admin_log django_admin_log_user_id_c564eba6_fk_auth_user_id FOREIGN KEY (user_id) REFERENCES public.auth_user(id) DEFERRABLE INITIALLY DEFERRED
+CONSTRAINT public.django_content_type django_content_type_app_label_model_76bd3d3b_uniq UNIQUE (app_label, model)
+CONSTRAINT public.django_content_type django_content_type_pkey PRIMARY KEY (id)
+CONSTRAINT public.django_migrations django_migrations_pkey PRIMARY KEY (id)
+CONSTRAINT public.django_session django_session_pkey PRIMARY KEY (session_key)
+CONSTRAINT public.factura factura_pkey PRIMARY KEY (id)
+CONSTRAINT public.factura factura_socio_id_fkey FOREIGN KEY (socio_id) REFERENCES public.socio(id) ON DELETE RESTRICT
+CONSTRAINT public.factura factura_tipo_pago_id_fkey FOREIGN KEY (tipo_pago_id) REFERENCES public.tipo_pago(id)
+CONSTRAINT public.libro_diario libro_diario_factura_id_fkey FOREIGN KEY (factura_id) REFERENCES public.factura(id) ON DELETE SET NULL
+CONSTRAINT public.libro_diario libro_diario_pkey PRIMARY KEY (id)
+CONSTRAINT public.libro_diario libro_diario_socio_id_fkey FOREIGN KEY (socio_id) REFERENCES public.socio(id) ON DELETE RESTRICT
+CONSTRAINT public.libro_diario libro_diario_tipo_pago_id_fkey FOREIGN KEY (tipo_pago_id) REFERENCES public.tipo_pago(id)
+CONSTRAINT public.mes mes_check CHECK (((VALUE >= 1) AND (VALUE <= 12)))
+CONSTRAINT public.migracion_incidencia migracion_incidencia_pkey PRIMARY KEY (id)
+CONSTRAINT public.migracion_incidencia migracion_incidencia_tipo_check CHECK (((tipo)::text = ANY (ARRAY[('RECHAZADA'::character varying)::text, ('CORREGIDA'::character varying)::text, ('REF_NO_RESUELTA'::character varying)::text, ('DUPLICADA'::character varying)::text])))
+CONSTRAINT public.nivel_acceso nivel_acceso_pkey PRIMARY KEY (id)
+CONSTRAINT public.proveedor proveedor_codigo_key UNIQUE (codigo)
+CONSTRAINT public.proveedor proveedor_pkey PRIMARY KEY (id)
+CONSTRAINT public.provincia provincia_nombre_key UNIQUE (nombre)
+CONSTRAINT public.provincia provincia_pkey PRIMARY KEY (id)
+CONSTRAINT public.retencion_iva retencion_iva_egreso_id_95424498_fk_cheque_emitido_id FOREIGN KEY (egreso_id) REFERENCES public.cheque_emitido(id) DEFERRABLE INITIALLY DEFERRED
+CONSTRAINT public.retencion_iva retencion_iva_montos_no_negativos CHECK (((base_imponible >= (0)::numeric) AND (monto_exento >= (0)::numeric) AND (monto_iva >= (0)::numeric) AND (monto_pagar >= (0)::numeric) AND (monto_retenido >= (0)::numeric)))
+CONSTRAINT public.retencion_iva retencion_iva_numero_14_digitos CHECK (((numero_comprobante)::text ~ '^[0-9]{14}$'::text))
+CONSTRAINT public.retencion_iva retencion_iva_numero_comprobante_key UNIQUE (numero_comprobante)
+CONSTRAINT public.retencion_iva retencion_iva_pkey PRIMARY KEY (id)
+CONSTRAINT public.retencion_iva retencion_iva_porcentaje_75_100 CHECK ((porcentaje_retencion = ANY (ARRAY[75, 100])))
+CONSTRAINT public.retencion_iva retencion_iva_proveedor_id_f3059b99_fk_proveedor_id FOREIGN KEY (proveedor_id) REFERENCES public.proveedor(id) DEFERRABLE INITIALLY DEFERRED
+CONSTRAINT public.retencion_iva retencion_iva_quincena CHECK ((quincena = ANY (ARRAY[1, 2])))
+CONSTRAINT public.socio socio_codigo_key UNIQUE (codigo)
+CONSTRAINT public.socio socio_estado_civil_check CHECK ((estado_civil = ANY (ARRAY['S'::bpchar, 'C'::bpchar, 'D'::bpchar, 'V'::bpchar, 'U'::bpchar])))
+CONSTRAINT public.socio socio_pkey PRIMARY KEY (id)
+CONSTRAINT public.socio socio_provincia_id_fkey FOREIGN KEY (provincia_id) REFERENCES public.provincia(id)
+CONSTRAINT public.socio socio_tipo_socio_check CHECK ((tipo_socio = ANY (ARRAY['P'::bpchar, 'U'::bpchar])))
+CONSTRAINT public.socio_cuota_extra socio_cuota_extra_cuota_extra_id_fkey FOREIGN KEY (cuota_extra_id) REFERENCES public.cuota_extra(id)
+CONSTRAINT public.socio_cuota_extra socio_cuota_extra_pkey PRIMARY KEY (id)
+CONSTRAINT public.socio_cuota_extra socio_cuota_extra_socio_id_fkey FOREIGN KEY (socio_id) REFERENCES public.socio(id) ON DELETE CASCADE
+CONSTRAINT public.socio_cuota_extra uq_socio_cuota_extra UNIQUE (socio_id, cuota_extra_id)
+CONSTRAINT public.socio_mensualidad socio_mensualidad_origen_check CHECK (((origen)::text = ANY (ARRAY[('SOCIOS'::character varying)::text, ('RELSOLV'::character varying)::text, ('MOROSOS'::character varying)::text])))
+CONSTRAINT public.socio_mensualidad socio_mensualidad_pkey PRIMARY KEY (id)
+CONSTRAINT public.socio_mensualidad socio_mensualidad_socio_id_fkey FOREIGN KEY (socio_id) REFERENCES public.socio(id) ON DELETE CASCADE
+CONSTRAINT public.socio_mensualidad uq_socio_mensualidad UNIQUE (socio_id, anio, mes)
+CONSTRAINT public.tarifa_mensual tarifa_mensual_pkey PRIMARY KEY (id)
+CONSTRAINT public.tarifa_mensual uq_tarifa_mensual UNIQUE (anio, mes)
+CONSTRAINT public.tipo_pago tipo_pago_codigo_key UNIQUE (codigo)
+CONSTRAINT public.tipo_pago tipo_pago_pkey PRIMARY KEY (id)
+CONSTRAINT public.uso_salon uso_salon_pkey PRIMARY KEY (id)
+CONSTRAINT public.uso_salon uso_salon_socio_id_fkey FOREIGN KEY (socio_id) REFERENCES public.socio(id) ON DELETE CASCADE
+CONSTRAINT public.usuario_sistema usuario_sistema_nivel_acceso_id_fkey FOREIGN KEY (nivel_acceso_id) REFERENCES public.nivel_acceso(id)
+CONSTRAINT public.usuario_sistema usuario_sistema_pkey PRIMARY KEY (id)
+INDEX CREATE INDEX auth_group_name_a6ea08ec_like ON public.auth_group USING btree (name varchar_pattern_ops)
+INDEX CREATE INDEX auth_group_permissions_group_id_b120cbf9 ON public.auth_group_permissions USING btree (group_id)
+INDEX CREATE INDEX auth_group_permissions_permission_id_84c5c92e ON public.auth_group_permissions USING btree (permission_id)
+INDEX CREATE INDEX auth_permission_content_type_id_2f476e4b ON public.auth_permission USING btree (content_type_id)
+INDEX CREATE INDEX auth_user_groups_group_id_97559544 ON public.auth_user_groups USING btree (group_id)
+INDEX CREATE INDEX auth_user_groups_user_id_6a12ed8b ON public.auth_user_groups USING btree (user_id)
+INDEX CREATE INDEX auth_user_user_permissions_permission_id_1fbb5f2c ON public.auth_user_user_permissions USING btree (permission_id)
+INDEX CREATE INDEX auth_user_user_permissions_user_id_a95ead1b ON public.auth_user_user_permissions USING btree (user_id)
+INDEX CREATE INDEX auth_user_username_6821ab7c_like ON public.auth_user USING btree (username varchar_pattern_ops)
+INDEX CREATE INDEX authtoken_token_key_10f0b77e_like ON public.authtoken_token USING btree (key varchar_pattern_ops)
+INDEX CREATE INDEX django_admin_log_content_type_id_c4bce8eb ON public.django_admin_log USING btree (content_type_id)
+INDEX CREATE INDEX django_admin_log_user_id_c564eba6 ON public.django_admin_log USING btree (user_id)
+INDEX CREATE INDEX django_session_expire_date_a5c62663 ON public.django_session USING btree (expire_date)
+INDEX CREATE INDEX django_session_session_key_c0390e0f_like ON public.django_session USING btree (session_key varchar_pattern_ops)
+INDEX CREATE INDEX ix_abono_factura ON public.abono USING btree (factura_relacionada_id)
+INDEX CREATE INDEX ix_abono_numero ON public.abono USING btree (numero_documento)
+INDEX CREATE INDEX ix_abono_socio ON public.abono USING btree (socio_id)
+INDEX CREATE INDEX ix_beneficiario_cedula ON public.beneficiario USING btree (cedula)
+INDEX CREATE INDEX ix_beneficiario_socio ON public.beneficiario USING btree (socio_id)
+INDEX CREATE INDEX ix_cheque_emitido_banco ON public.cheque_emitido USING btree (banco_id)
+INDEX CREATE INDEX ix_cheque_emitido_fecha ON public.cheque_emitido USING btree (fecha)
+INDEX CREATE INDEX ix_cheque_recibido_factura ON public.cheque_recibido USING btree (factura_id)
+INDEX CREATE INDEX ix_cheque_recibido_socio ON public.cheque_recibido USING btree (socio_id)
+INDEX CREATE INDEX ix_deposito_banco ON public.deposito USING btree (banco_id)
+INDEX CREATE INDEX ix_deposito_factura ON public.deposito USING btree (factura_id)
+INDEX CREATE INDEX ix_deposito_fecha ON public.deposito USING btree (fecha_pago)
+INDEX CREATE INDEX ix_deposito_socio ON public.deposito USING btree (socio_id)
+INDEX CREATE INDEX ix_factura_fecha_emision ON public.factura USING btree (fecha_emision)
+INDEX CREATE INDEX ix_factura_numero ON public.factura USING btree (numero)
+INDEX CREATE INDEX ix_factura_socio ON public.factura USING btree (socio_id)
+INDEX CREATE INDEX ix_factura_tipo_pago ON public.factura USING btree (tipo_pago_id)
+INDEX CREATE INDEX ix_libro_diario_factura ON public.libro_diario USING btree (factura_id)
+INDEX CREATE INDEX ix_libro_diario_socio ON public.libro_diario USING btree (socio_id)
+INDEX CREATE INDEX ix_migracion_incidencia_tabla ON public.migracion_incidencia USING btree (tabla_origen, tipo)
+INDEX CREATE INDEX ix_socio_apellidos ON public.socio USING btree (apellidos, nombres)
+INDEX CREATE INDEX ix_socio_cedula ON public.socio USING btree (cedula)
+INDEX CREATE INDEX ix_socio_cuota_extra_cuota ON public.socio_cuota_extra USING btree (cuota_extra_id)
+INDEX CREATE INDEX ix_socio_mensualidad_pendiente ON public.socio_mensualidad USING btree (anio, mes) WHERE (NOT pagado)
+INDEX CREATE INDEX ix_socio_provincia ON public.socio USING btree (provincia_id)
+INDEX CREATE INDEX ix_uso_salon_socio ON public.uso_salon USING btree (socio_id)
+INDEX CREATE INDEX ix_usuario_sistema_nivel ON public.usuario_sistema USING btree (nivel_acceso_id)
+INDEX CREATE INDEX retencion_iva_egreso_id_95424498 ON public.retencion_iva USING btree (egreso_id)
+INDEX CREATE INDEX retencion_iva_numero_comprobante_cf8fce9b_like ON public.retencion_iva USING btree (numero_comprobante varchar_pattern_ops)
+INDEX CREATE INDEX retencion_iva_proveedor_id_f3059b99 ON public.retencion_iva USING btree (proveedor_id)
+INDEX CREATE UNIQUE INDEX abono_pkey ON public.abono USING btree (id)
+INDEX CREATE UNIQUE INDEX abonos_pkey ON legacy.abonos USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX activo_fijo_codigo_key ON public.activo_fijo USING btree (codigo)
+INDEX CREATE UNIQUE INDEX activo_fijo_pkey ON public.activo_fijo USING btree (id)
+INDEX CREATE UNIQUE INDEX activos_pkey ON legacy.activos USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX auth_group_name_key ON public.auth_group USING btree (name)
+INDEX CREATE UNIQUE INDEX auth_group_permissions_group_id_permission_id_0cd325b0_uniq ON public.auth_group_permissions USING btree (group_id, permission_id)
+INDEX CREATE UNIQUE INDEX auth_group_permissions_pkey ON public.auth_group_permissions USING btree (id)
+INDEX CREATE UNIQUE INDEX auth_group_pkey ON public.auth_group USING btree (id)
+INDEX CREATE UNIQUE INDEX auth_permission_content_type_id_codename_01ab375a_uniq ON public.auth_permission USING btree (content_type_id, codename)
+INDEX CREATE UNIQUE INDEX auth_permission_pkey ON public.auth_permission USING btree (id)
+INDEX CREATE UNIQUE INDEX auth_user_groups_pkey ON public.auth_user_groups USING btree (id)
+INDEX CREATE UNIQUE INDEX auth_user_groups_user_id_group_id_94350c0c_uniq ON public.auth_user_groups USING btree (user_id, group_id)
+INDEX CREATE UNIQUE INDEX auth_user_pkey ON public.auth_user USING btree (id)
+INDEX CREATE UNIQUE INDEX auth_user_user_permissions_pkey ON public.auth_user_user_permissions USING btree (id)
+INDEX CREATE UNIQUE INDEX auth_user_user_permissions_user_id_permission_id_14a6b632_uniq ON public.auth_user_user_permissions USING btree (user_id, permission_id)
+INDEX CREATE UNIQUE INDEX auth_user_username_key ON public.auth_user USING btree (username)
+INDEX CREATE UNIQUE INDEX authtoken_token_pkey ON public.authtoken_token USING btree (key)
+INDEX CREATE UNIQUE INDEX authtoken_token_user_id_key ON public.authtoken_token USING btree (user_id)
+INDEX CREATE UNIQUE INDEX banco_nombre_key ON public.banco USING btree (nombre)
+INDEX CREATE UNIQUE INDEX banco_pkey ON public.banco USING btree (id)
+INDEX CREATE UNIQUE INDEX bancos_pkey ON legacy.bancos USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX beneficiario_codigo_key ON public.beneficiario USING btree (codigo)
+INDEX CREATE UNIQUE INDEX beneficiario_pkey ON public.beneficiario USING btree (id)
+INDEX CREATE UNIQUE INDEX beneficiarios_pkey ON legacy.beneficiarios USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX calendario_cobro_pkey ON public.calendario_cobro USING btree (mes)
+INDEX CREATE UNIQUE INDEX cheque_emitido_numero_cheque_key ON public.cheque_emitido USING btree (numero_cheque)
+INDEX CREATE UNIQUE INDEX cheque_emitido_pkey ON public.cheque_emitido USING btree (id)
+INDEX CREATE UNIQUE INDEX cheque_recibido_pkey ON public.cheque_recibido USING btree (id)
+INDEX CREATE UNIQUE INDEX cheques_cg_pkey ON legacy.cheques_cg USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX cheques_pkey ON legacy.cheques USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX concesion_mensualidad_pkey ON public.concesion_mensualidad USING btree (id)
+INDEX CREATE UNIQUE INDEX concesion_pkey ON legacy.concesion USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX concesion_pkey ON public.concesion USING btree (id)
+INDEX CREATE UNIQUE INDEX concesion_tipo_pago_id_key ON public.concesion USING btree (tipo_pago_id)
+INDEX CREATE UNIQUE INDEX configuracion_pkey ON public.configuracion USING btree (id)
+INDEX CREATE UNIQUE INDEX cuota_extra_numero_key ON public.cuota_extra USING btree (numero)
+INDEX CREATE UNIQUE INDEX cuota_extra_pkey ON public.cuota_extra USING btree (id)
+INDEX CREATE UNIQUE INDEX deposito_pkey ON public.deposito USING btree (id)
+INDEX CREATE UNIQUE INDEX depositos_pkey ON legacy.depositos USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX django_admin_log_pkey ON public.django_admin_log USING btree (id)
+INDEX CREATE UNIQUE INDEX django_content_type_app_label_model_76bd3d3b_uniq ON public.django_content_type USING btree (app_label, model)
+INDEX CREATE UNIQUE INDEX django_content_type_pkey ON public.django_content_type USING btree (id)
+INDEX CREATE UNIQUE INDEX django_migrations_pkey ON public.django_migrations USING btree (id)
+INDEX CREATE UNIQUE INDEX django_session_pkey ON public.django_session USING btree (session_key)
+INDEX CREATE UNIQUE INDEX factura_pkey ON public.factura USING btree (id)
+INDEX CREATE UNIQUE INDEX facturas_pkey ON legacy.facturas USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX libdia_pkey ON legacy.libdia USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX libro_diario_pkey ON public.libro_diario USING btree (id)
+INDEX CREATE UNIQUE INDEX migracion_incidencia_pkey ON public.migracion_incidencia USING btree (id)
+INDEX CREATE UNIQUE INDEX montos_pkey ON legacy.montos USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX montosaa_pkey ON legacy.montosaa USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX morconc_pkey ON legacy.morconc USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX morosos_pkey ON legacy.morosos USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX nivel_acceso_pkey ON public.nivel_acceso USING btree (id)
+INDEX CREATE UNIQUE INDEX nivel_pkey ON legacy.nivel USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX proveedor_codigo_key ON public.proveedor USING btree (codigo)
+INDEX CREATE UNIQUE INDEX proveedor_pkey ON legacy.proveedor USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX proveedor_pkey ON public.proveedor USING btree (id)
+INDEX CREATE UNIQUE INDEX provincia_nombre_key ON public.provincia USING btree (nombre)
+INDEX CREATE UNIQUE INDEX provincia_pkey ON public.provincia USING btree (id)
+INDEX CREATE UNIQUE INDEX provincias_pkey ON legacy.provincias USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX relsolv_pkey ON legacy.relsolv USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX relsolvconc_pkey ON legacy.relsolvconc USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX retencion_iva_factura_unica ON public.retencion_iva USING btree (proveedor_rif, numero_factura, numero_control) WHERE (NOT anulada)
+INDEX CREATE UNIQUE INDEX retencion_iva_numero_comprobante_key ON public.retencion_iva USING btree (numero_comprobante)
+INDEX CREATE UNIQUE INDEX retencion_iva_pkey ON public.retencion_iva USING btree (id)
+INDEX CREATE UNIQUE INDEX socio_codigo_key ON public.socio USING btree (codigo)
+INDEX CREATE UNIQUE INDEX socio_cuota_extra_pkey ON public.socio_cuota_extra USING btree (id)
+INDEX CREATE UNIQUE INDEX socio_mensualidad_pkey ON public.socio_mensualidad USING btree (id)
+INDEX CREATE UNIQUE INDEX socio_pkey ON public.socio USING btree (id)
+INDEX CREATE UNIQUE INDEX socios_pkey ON legacy.socios USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX tarifa_mensual_pkey ON public.tarifa_mensual USING btree (id)
+INDEX CREATE UNIQUE INDEX temp_divisas_pkey ON legacy.temp_divisas USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX temp_montosaa_pkey ON legacy.temp_montosaa USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX temp_total_socios_pkey ON legacy.temp_total_socios USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX tipo_pago_codigo_key ON public.tipo_pago USING btree (codigo)
+INDEX CREATE UNIQUE INDEX tipo_pago_pkey ON public.tipo_pago USING btree (id)
+INDEX CREATE UNIQUE INDEX tipospagos_pkey ON legacy.tipospagos USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX uq_concesion_mensualidad ON public.concesion_mensualidad USING btree (concesion_id, anio, mes)
+INDEX CREATE UNIQUE INDEX uq_socio_cuota_extra ON public.socio_cuota_extra USING btree (socio_id, cuota_extra_id)
+INDEX CREATE UNIQUE INDEX uq_socio_mensualidad ON public.socio_mensualidad USING btree (socio_id, anio, mes)
+INDEX CREATE UNIQUE INDEX uq_tarifa_mensual ON public.tarifa_mensual USING btree (anio, mes)
+INDEX CREATE UNIQUE INDEX uso_salon_pkey ON public.uso_salon USING btree (id)
+INDEX CREATE UNIQUE INDEX usosalon_pkey ON legacy.usosalon USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX usuario_sistema_pkey ON public.usuario_sistema USING btree (id)
+INDEX CREATE UNIQUE INDEX usuarios_pkey ON legacy.usuarios USING btree (_fila_origen)
+INDEX CREATE UNIQUE INDEX ux_usuario_sistema_username ON public.usuario_sistema USING btree (lower((username)::text))
+OWNED public.abono_id_seq -> public.abono.id
+OWNED public.activo_fijo_id_seq -> public.activo_fijo.id
+OWNED public.auth_group_id_seq -> public.auth_group.id
+OWNED public.auth_group_permissions_id_seq -> public.auth_group_permissions.id
+OWNED public.auth_permission_id_seq -> public.auth_permission.id
+OWNED public.auth_user_groups_id_seq -> public.auth_user_groups.id
+OWNED public.auth_user_id_seq -> public.auth_user.id
+OWNED public.auth_user_user_permissions_id_seq -> public.auth_user_user_permissions.id
+OWNED public.banco_id_seq -> public.banco.id
+OWNED public.beneficiario_id_seq -> public.beneficiario.id
+OWNED public.cheque_emitido_id_seq -> public.cheque_emitido.id
+OWNED public.cheque_recibido_id_seq -> public.cheque_recibido.id
+OWNED public.concesion_id_seq -> public.concesion.id
+OWNED public.concesion_mensualidad_id_seq -> public.concesion_mensualidad.id
+OWNED public.cuota_extra_id_seq -> public.cuota_extra.id
+OWNED public.deposito_id_seq -> public.deposito.id
+OWNED public.django_admin_log_id_seq -> public.django_admin_log.id
+OWNED public.django_content_type_id_seq -> public.django_content_type.id
+OWNED public.django_migrations_id_seq -> public.django_migrations.id
+OWNED public.factura_id_seq -> public.factura.id
+OWNED public.libro_diario_id_seq -> public.libro_diario.id
+OWNED public.migracion_incidencia_id_seq -> public.migracion_incidencia.id
+OWNED public.proveedor_id_seq -> public.proveedor.id
+OWNED public.provincia_id_seq -> public.provincia.id
+OWNED public.retencion_iva_id_seq -> public.retencion_iva.id
+OWNED public.socio_cuota_extra_id_seq -> public.socio_cuota_extra.id
+OWNED public.socio_id_seq -> public.socio.id
+OWNED public.socio_mensualidad_id_seq -> public.socio_mensualidad.id
+OWNED public.tarifa_mensual_id_seq -> public.tarifa_mensual.id
+OWNED public.tipo_pago_id_seq -> public.tipo_pago.id
+OWNED public.uso_salon_id_seq -> public.uso_salon.id
+OWNED public.usuario_sistema_id_seq -> public.usuario_sistema.id
+RELATION legacy.abonos kind=r persistence=p rls=false/false
+RELATION legacy.activos kind=r persistence=p rls=false/false
+RELATION legacy.bancos kind=r persistence=p rls=false/false
+RELATION legacy.beneficiarios kind=r persistence=p rls=false/false
+RELATION legacy.cheques kind=r persistence=p rls=false/false
+RELATION legacy.cheques_cg kind=r persistence=p rls=false/false
+RELATION legacy.concesion kind=r persistence=p rls=false/false
+RELATION legacy.depositos kind=r persistence=p rls=false/false
+RELATION legacy.facturas kind=r persistence=p rls=false/false
+RELATION legacy.libdia kind=r persistence=p rls=false/false
+RELATION legacy.montos kind=r persistence=p rls=false/false
+RELATION legacy.montosaa kind=r persistence=p rls=false/false
+RELATION legacy.morconc kind=r persistence=p rls=false/false
+RELATION legacy.morosos kind=r persistence=p rls=false/false
+RELATION legacy.nivel kind=r persistence=p rls=false/false
+RELATION legacy.proveedor kind=r persistence=p rls=false/false
+RELATION legacy.provincias kind=r persistence=p rls=false/false
+RELATION legacy.relsolv kind=r persistence=p rls=false/false
+RELATION legacy.relsolvconc kind=r persistence=p rls=false/false
+RELATION legacy.socios kind=r persistence=p rls=false/false
+RELATION legacy.temp_divisas kind=r persistence=p rls=false/false
+RELATION legacy.temp_montosaa kind=r persistence=p rls=false/false
+RELATION legacy.temp_total_socios kind=r persistence=p rls=false/false
+RELATION legacy.tipospagos kind=r persistence=p rls=false/false
+RELATION legacy.usosalon kind=r persistence=p rls=false/false
+RELATION legacy.usuarios kind=r persistence=p rls=false/false
+RELATION public.abono kind=r persistence=p rls=false/false
+RELATION public.abono_id_seq kind=S persistence=p rls=false/false
+RELATION public.activo_fijo kind=r persistence=p rls=false/false
+RELATION public.activo_fijo_id_seq kind=S persistence=p rls=false/false
+RELATION public.auth_group kind=r persistence=p rls=false/false
+RELATION public.auth_group_id_seq kind=S persistence=p rls=false/false
+RELATION public.auth_group_permissions kind=r persistence=p rls=false/false
+RELATION public.auth_group_permissions_id_seq kind=S persistence=p rls=false/false
+RELATION public.auth_permission kind=r persistence=p rls=false/false
+RELATION public.auth_permission_id_seq kind=S persistence=p rls=false/false
+RELATION public.auth_user kind=r persistence=p rls=false/false
+RELATION public.auth_user_groups kind=r persistence=p rls=false/false
+RELATION public.auth_user_groups_id_seq kind=S persistence=p rls=false/false
+RELATION public.auth_user_id_seq kind=S persistence=p rls=false/false
+RELATION public.auth_user_user_permissions kind=r persistence=p rls=false/false
+RELATION public.auth_user_user_permissions_id_seq kind=S persistence=p rls=false/false
+RELATION public.authtoken_token kind=r persistence=p rls=false/false
+RELATION public.banco kind=r persistence=p rls=false/false
+RELATION public.banco_id_seq kind=S persistence=p rls=false/false
+RELATION public.beneficiario kind=r persistence=p rls=false/false
+RELATION public.beneficiario_id_seq kind=S persistence=p rls=false/false
+RELATION public.calendario_cobro kind=r persistence=p rls=false/false
+RELATION public.cheque_emitido kind=r persistence=p rls=false/false
+RELATION public.cheque_emitido_id_seq kind=S persistence=p rls=false/false
+RELATION public.cheque_recibido kind=r persistence=p rls=false/false
+RELATION public.cheque_recibido_id_seq kind=S persistence=p rls=false/false
+RELATION public.concesion kind=r persistence=p rls=false/false
+RELATION public.concesion_id_seq kind=S persistence=p rls=false/false
+RELATION public.concesion_mensualidad kind=r persistence=p rls=false/false
+RELATION public.concesion_mensualidad_id_seq kind=S persistence=p rls=false/false
+RELATION public.configuracion kind=r persistence=p rls=false/false
+RELATION public.cuota_extra kind=r persistence=p rls=false/false
+RELATION public.cuota_extra_id_seq kind=S persistence=p rls=false/false
+RELATION public.deposito kind=r persistence=p rls=false/false
+RELATION public.deposito_id_seq kind=S persistence=p rls=false/false
+RELATION public.django_admin_log kind=r persistence=p rls=false/false
+RELATION public.django_admin_log_id_seq kind=S persistence=p rls=false/false
+RELATION public.django_content_type kind=r persistence=p rls=false/false
+RELATION public.django_content_type_id_seq kind=S persistence=p rls=false/false
+RELATION public.django_migrations kind=r persistence=p rls=false/false
+RELATION public.django_migrations_id_seq kind=S persistence=p rls=false/false
+RELATION public.django_session kind=r persistence=p rls=false/false
+RELATION public.factura kind=r persistence=p rls=false/false
+RELATION public.factura_id_seq kind=S persistence=p rls=false/false
+RELATION public.libro_diario kind=r persistence=p rls=false/false
+RELATION public.libro_diario_id_seq kind=S persistence=p rls=false/false
+RELATION public.migracion_incidencia kind=r persistence=p rls=false/false
+RELATION public.migracion_incidencia_id_seq kind=S persistence=p rls=false/false
+RELATION public.nivel_acceso kind=r persistence=p rls=false/false
+RELATION public.proveedor kind=r persistence=p rls=false/false
+RELATION public.proveedor_id_seq kind=S persistence=p rls=false/false
+RELATION public.provincia kind=r persistence=p rls=false/false
+RELATION public.provincia_id_seq kind=S persistence=p rls=false/false
+RELATION public.retencion_iva kind=r persistence=p rls=false/false
+RELATION public.retencion_iva_id_seq kind=S persistence=p rls=false/false
+RELATION public.socio kind=r persistence=p rls=false/false
+RELATION public.socio_cuota_extra kind=r persistence=p rls=false/false
+RELATION public.socio_cuota_extra_id_seq kind=S persistence=p rls=false/false
+RELATION public.socio_id_seq kind=S persistence=p rls=false/false
+RELATION public.socio_mensualidad kind=r persistence=p rls=false/false
+RELATION public.socio_mensualidad_id_seq kind=S persistence=p rls=false/false
+RELATION public.tarifa_mensual kind=r persistence=p rls=false/false
+RELATION public.tarifa_mensual_id_seq kind=S persistence=p rls=false/false
+RELATION public.tipo_pago kind=r persistence=p rls=false/false
+RELATION public.tipo_pago_id_seq kind=S persistence=p rls=false/false
+RELATION public.uso_salon kind=r persistence=p rls=false/false
+RELATION public.uso_salon_id_seq kind=S persistence=p rls=false/false
+RELATION public.usuario_sistema kind=r persistence=p rls=false/false
+RELATION public.usuario_sistema_id_seq kind=S persistence=p rls=false/false
+SCHEMA legacy
+SEQUENCE public.abono_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.activo_fijo_id_seq integer start=1 increment=1 min=1 max=2147483647 cycle=false
+SEQUENCE public.auth_group_id_seq integer start=1 increment=1 min=1 max=2147483647 cycle=false
+SEQUENCE public.auth_group_permissions_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.auth_permission_id_seq integer start=1 increment=1 min=1 max=2147483647 cycle=false
+SEQUENCE public.auth_user_groups_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.auth_user_id_seq integer start=1 increment=1 min=1 max=2147483647 cycle=false
+SEQUENCE public.auth_user_user_permissions_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.banco_id_seq smallint start=1 increment=1 min=1 max=32767 cycle=false
+SEQUENCE public.beneficiario_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.cheque_emitido_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.cheque_recibido_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.concesion_id_seq smallint start=1 increment=1 min=1 max=32767 cycle=false
+SEQUENCE public.concesion_mensualidad_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.cuota_extra_id_seq smallint start=1 increment=1 min=1 max=32767 cycle=false
+SEQUENCE public.deposito_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.django_admin_log_id_seq integer start=1 increment=1 min=1 max=2147483647 cycle=false
+SEQUENCE public.django_content_type_id_seq integer start=1 increment=1 min=1 max=2147483647 cycle=false
+SEQUENCE public.django_migrations_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.factura_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.libro_diario_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.migracion_incidencia_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.proveedor_id_seq smallint start=1 increment=1 min=1 max=32767 cycle=false
+SEQUENCE public.provincia_id_seq smallint start=1 increment=1 min=1 max=32767 cycle=false
+SEQUENCE public.retencion_iva_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.socio_cuota_extra_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.socio_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.socio_mensualidad_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.tarifa_mensual_id_seq integer start=1 increment=1 min=1 max=2147483647 cycle=false
+SEQUENCE public.tipo_pago_id_seq smallint start=1 increment=1 min=1 max=32767 cycle=false
+SEQUENCE public.uso_salon_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+SEQUENCE public.usuario_sistema_id_seq bigint start=1 increment=1 min=1 max=9223372036854775807 cycle=false
+TYPE public.anio d smallint
+TYPE public.dinero d numeric(18,4)
+TYPE public.mes d smallint
