@@ -1,0 +1,18 @@
+[Unit]
+Description=SGA-GALLEGO (Django + gunicorn)
+After=network.target postgresql.service
+Requires=postgresql.service
+
+[Service]
+User=sga
+Group=sga
+WorkingDirectory=/opt/sga-gallego/backend
+ExecStart=/opt/sga-gallego/venv/bin/gunicorn sicga.wsgi:application --bind 127.0.0.1:8000 --workers 3 --timeout 180 --access-logfile -
+Restart=always
+RestartSec=3
+# El proceso no necesita más que su carpeta
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

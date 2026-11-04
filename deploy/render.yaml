@@ -1,0 +1,28 @@
+# Blueprint de Render, plan GRATUITO (sin tarjeta): el sistema en internet mientras no haya servidor propio.
+# La base de datos va en Neon (también gratis); su cadena de conexión se pega en PG_DSN al crear el servicio.
+# Limitaciones del plan gratuito: se duerme tras 15 min sin visitas (la primera entrada tarda ~1 min) y el disco
+# no es permanente (las fotos subidas se pierden al reiniciar).
+services:
+  - type: web
+    name: sga-gallego
+    runtime: python
+    plan: free
+    region: virginia
+    buildCommand: pip install -r backend/requirements-servidor.txt
+    startCommand: cd backend && gunicorn sicga.wsgi:application --bind 0.0.0.0:$PORT --workers 2 --timeout 180
+    healthCheckPath: /login
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.8"
+      - key: DJANGO_DEBUG
+        value: "false"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_ALLOWED_HOSTS
+        value: ".onrender.com"
+      - key: DJANGO_CSRF_TRUSTED_ORIGINS
+        value: "https://sga-gallego.onrender.com"
+      - key: DJANGO_DETRAS_DE_PROXY
+        value: "true"
+      - key: PG_DSN
+        sync: false

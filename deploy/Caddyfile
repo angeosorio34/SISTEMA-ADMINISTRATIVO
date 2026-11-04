@@ -1,0 +1,17 @@
+# HTTPS automático (Let's Encrypt). instalar.sh reemplaza {{DOMINIO}} por el nombre del servidor.
+{{DOMINIO}} {
+	encode zstd gzip
+	# Archivos del panel de administración de Django (collectstatic)
+	handle_path /static/* {
+		root * /opt/sga-gallego/backend/staticfiles
+		file_server
+	}
+	reverse_proxy 127.0.0.1:8000
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options nosniff
+		Referrer-Policy same-origin
+		X-Frame-Options DENY
+		-Server
+	}
+}
